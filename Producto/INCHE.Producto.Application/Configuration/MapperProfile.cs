@@ -5,6 +5,7 @@ using INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProducts;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductByName;
+using INCHE.Producto.Application.DataBase.Sale;
 using INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale;
 using INCHE.Producto.Application.DataBase.User.Commands.CreateUser;
 using INCHE.Producto.Application.DataBase.User.Commands.UpdateUser;
@@ -83,14 +84,22 @@ namespace INCHE.Producto.Application.Configuration
 			#endregion
 
 
+			#region Venta
+			
 
 			CreateMap<CreateSaleModel, VentaCabEntity>()
-			.ForMember(dest => dest.FechaRegistro, opt => opt.MapFrom(src => src.fecha_Registro))
-			.ForMember(dest => dest.SubTotal, opt => opt.MapFrom(src => src.sub_Total))
-			.ForMember(dest => dest.Igv, opt => opt.MapFrom(src => src.Igv_Total))
-			.ForMember(dest => dest.Total, opt => opt.MapFrom(src => src.total_Total))
-			.ForMember(dest => dest.Detalles, opt => opt.MapFrom(src => src.Detalles))
-			.ForMember(dest => dest.VentaCabId, opt => opt.Ignore()); 
+				.ForMember(dest => dest.FechaRegistro, opt => opt.MapFrom(src => src.fecha_Registro))
+				.ForMember(dest => dest.SubTotal, opt => opt.MapFrom(src => src.sub_Total))
+				.ForMember(dest => dest.Igv, opt => opt.MapFrom(src => src.Igv_Total))
+				.ForMember(dest => dest.Total, opt => opt.MapFrom(src => src.total_Total))
+				.ForMember(dest => dest.Detalles, opt => opt.MapFrom(src => src.Detalles))
+				.ForMember(dest => dest.VentaCabId, opt => opt.Ignore())
+				.ReverseMap()
+				.ForMember(dest => dest.fecha_Registro, opt => opt.MapFrom(src => src.FechaRegistro))
+				.ForMember(dest => dest.sub_Total, opt => opt.MapFrom(src => src.SubTotal))
+				.ForMember(dest => dest.Igv_Total, opt => opt.MapFrom(src => src.Igv))
+				.ForMember(dest => dest.total_Total, opt => opt.MapFrom(src => src.Total))
+				.ForMember(dest => dest.Detalles, opt => opt.MapFrom(src => src.Detalles));
 
 			CreateMap<CreateVentaDetalleModel, VentaDetEntity>()
 				.ForMember(dest => dest.ProductoId, opt => opt.MapFrom(src => src.codigo_item))
@@ -100,7 +109,36 @@ namespace INCHE.Producto.Application.Configuration
 				.ForMember(dest => dest.Total, opt => opt.MapFrom(src => src.total_item))
 				.ForMember(dest => dest.Precio, opt => opt.MapFrom(src => src.precio_item))
 				.ForMember(dest => dest.VentaCabId, opt => opt.Ignore())
-				.ForMember(dest => dest.VentaDetId, opt => opt.Ignore());
+				.ForMember(dest => dest.VentaDetId, opt => opt.Ignore())
+				.ReverseMap()
+				.ForMember(dest => dest.codigo_item, opt => opt.MapFrom(src => src.ProductoId))
+				.ForMember(dest => dest.cantidad_item, opt => opt.MapFrom(src => src.Cantidad))
+				.ForMember(dest => dest.subtotal_item, opt => opt.MapFrom(src => src.SubTotal))
+				.ForMember(dest => dest.igv_item, opt => opt.MapFrom(src => src.Igv))
+				.ForMember(dest => dest.total_item, opt => opt.MapFrom(src => src.Total))
+				.ForMember(dest => dest.precio_item, opt => opt.MapFrom(src => src.Precio));
+
+			// Mapeo de cabecera
+			CreateMap<VentaCabEntity, ResponseSaleModel>()
+				.ForMember(dest => dest.codigo_venta, opt => opt.MapFrom(src => src.VentaCabId))
+				.ForMember(dest => dest.fecha_Registro, opt => opt.MapFrom(src => src.FechaRegistro))
+				.ForMember(dest => dest.sub_Total, opt => opt.MapFrom(src => src.SubTotal))
+				.ForMember(dest => dest.Igv_Total, opt => opt.MapFrom(src => src.Igv))
+				.ForMember(dest => dest.total_Total, opt => opt.MapFrom(src => src.Total))
+				.ForMember(dest => dest.Detalles, opt => opt.MapFrom(src => src.Detalles));
+
+			// Mapeo de detalle
+			CreateMap<VentaDetEntity, ResponseSaleDetModel>()
+				.ForMember(dest => dest.codigo_venta, opt => opt.MapFrom(src => src.VentaCabId))
+				.ForMember(dest => dest.codigo_detalle, opt => opt.MapFrom(src => src.VentaDetId))
+				.ForMember(dest => dest.codigo_item, opt => opt.MapFrom(src => src.ProductoId))
+				.ForMember(dest => dest.cantidad_item, opt => opt.MapFrom(src => src.Cantidad))
+				.ForMember(dest => dest.precio_item, opt => opt.MapFrom(src => src.Precio))
+				.ForMember(dest => dest.subtotal_item, opt => opt.MapFrom(src => src.SubTotal))
+				.ForMember(dest => dest.igv_item, opt => opt.MapFrom(src => src.Igv))
+				.ForMember(dest => dest.total_item, opt => opt.MapFrom(src => src.Total));
+
+			#endregion
 
 
 		}

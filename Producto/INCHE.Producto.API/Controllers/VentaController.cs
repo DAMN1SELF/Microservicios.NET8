@@ -1,22 +1,19 @@
 ﻿using FluentValidation;
-using INCHE.Ventao.Application.DataBase.Venta.Commands.CreateVenta;
-using INCHE.Ventao.Application.DataBase.Venta.Commands.DeleteVenta;
-using INCHE.Ventao.Application.DataBase.Venta.Commands.UpdateVenta;
-using INCHE.Ventao.Application.DataBase.Venta.Queries.GetAllVentas;
-using INCHE.Ventao.Application.DataBase.Venta.Queries.GetVentaById;
-using INCHE.Ventao.Application.DataBase.Venta.Queries.GetVentaByName;
+using INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct;
+using INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale;
+using INCHE.Producto.Application.DataBase.Sale.Queries.GetAllSales;
+using INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById;
 using INCHE.Producto.Application.Exceptions;
 using INCHE.Producto.Application.Features;
 using INCHE.Producto.Common.Constants;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
 
 
 namespace INCHE.Producto.API.Controllers
 {
 
-	[Authorize]
+
 	[Route("api/v1/[controller]")]
 	[TypeFilter(typeof(ExceptionManager))]
 	[ApiController]
@@ -32,48 +29,74 @@ namespace INCHE.Producto.API.Controllers
 		/// <summary>
 		/// Registrar una nueva venta
 		/// </summary>
+		/// <param name="model">El formato json </param>
+		/// <param name="createVentaCommand"></param>
+		/// <returns></returns>
 		[HttpPost("registrar-venta")]
 		public async Task<IActionResult> RegisterSale(
-			[FromBody] CreateVentaModel model,
-			[FromServices] ICreateVentaCommand createVentaCommand,
-			[FromServices] IValidator<CreateVentaModel> validator)
+			[FromBody] CreateSaleModel model,
+			[FromServices] ICreateSaleCommand createVentaCommand
+			)
 		{
-			var validation = await validator.ValidateAsync(model);
-			if (!validation.IsValid)
-				return BadRequest(ResponseApiService.Response(StatusCodes.Status400BadRequest, validation.Errors));
 
-			var result = await createVentaCommand.Execute(model);
-			if (result.Success)
-				return StatusCode(StatusCodes.Status201Created, ResponseApiService.Response(StatusCodes.Status201Created, result.Data, "Venta registrada correctamente"));
+			var data = await createVentaCommand.Execute(model);
+			return StatusCode(StatusCodes.Status201Created, ResponseApiService.Response(StatusCodes.Status201Created, data, Messages.RecordCreated));
 
-			return StatusCode(StatusCodes.Status400BadRequest, ResponseApiService.Response(StatusCodes.Status400BadRequest, result.Errors));
 		}
 
 		/// <summary>
-		/// Listar todas las ventas
+		/// Listar todas las ventas registradas
 		/// </summary>
-		[HttpGet("listar-venta")]
-		public async Task<IActionResult> ListarVenta(
-			[FromServices] IGetAllVentaQuery getAllVentaQuery)
+		/// <param name="getAllSalesQuery">CQRS que se encarga de listar las ventas</param>
+		/// <returns></returns>
+		[HttpGet("listar-ventas")]
+		public async Task<IActionResult> ListSales(
+		[FromServices] IGetAllSalesQuery getAllSalesQuery)
 		{
-			var result = await getAllVentaQuery.Execute();
-			return Ok(ResponseApiService.Response(StatusCodes.Status200OK, result, "Ventas obtenidas correctamente"));
+			var data = await getAllSalesQuery.Execute(IncludeDetails:false);
+			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, Messages.RecordsRetrieved));
 		}
 
 		/// <summary>
-		/// Obtener una venta por ID
+		/// Listar todas las ventas registradas
 		/// </summary>
-		[HttpGet("obtener-venta/{id}")]
-		public async Task<IActionResult> ObtenerVenta(
-			int id,
-			[FromServices] IGetVentaByIdQuery getVentaByIdQuery)
+		/// <param name="getAllSalesQuery">CQRS que se encarga de listar las ventas</param>
+		/// <returns></returns>
+		[HttpGet("listar-ventas-detalladas")]
+		public async Task<IActionResult> ListSales2(
+		[FromServices] IGetAllSalesQuery getAllSalesQuery)
 		{
-			var result = await getVentaByIdQuery.Execute(id);
-			if (result == null)
-				return NotFound(ResponseApiService.Response(StatusCodes.Status404NotFound, null, "Venta no encontrada"));
+			var data = await getAllSalesQuery.Execute(IncludeDetails: true);
+			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, Messages.RecordsRetrieved));
+		}
 
-			return Ok(ResponseApiService.Response(StatusCodes.Status200OK, result, "Venta obtenida correctamente"));
+
+
+		/// <summary>
+		///	 Recuperar una venta por su ID
+		/// </summary>
+		/// <returns></returns>
+		[HttpGet("buscar-venta/{Id}")]
+		public async Task<IActionResult> ListSalebyId(
+		int Id,
+		[FromServices] IGetSaleByIdQuery getSale)
+		{
+			var data = await getSale.Execute(Id,IncludeDetails: false);
+			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, Messages.RecordsRetrieved));
+		}
+
+		/// <summary>
+		/// buscar una venta por su ID con detalles
+		/// </summary>
+		/// <returns></returns>
+		[HttpGet("buscar-venta-detallada/{Id}")]
+		public async Task<IActionResult> ListSalebyId2(
+		int Id,
+		[FromServices] IGetSaleByIdQuery getSale)
+		{
+			var data = await getSale.Execute(Id, IncludeDetails: true);
+			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, Messages.RecordsRetrieved));
 		}
 	}
-}
+
 }

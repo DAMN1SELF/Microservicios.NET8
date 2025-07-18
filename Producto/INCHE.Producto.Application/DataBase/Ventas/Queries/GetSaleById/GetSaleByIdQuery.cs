@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using INCHE.Producto.Common.Constants;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById
 {
@@ -14,11 +16,26 @@ namespace INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById
             _mapper = mapper;
         }
 
-        public async Task<GetSaleByIdModel> Execute(int SaleId)
+        public async Task<ResponseSaleModel> Execute(int SaleId, bool IncludeDetails)
         {
-            var entity = await _dataBaseService.Producto
-                .FirstOrDefaultAsync(x => x.Id == SaleId);
-            return _mapper.Map<GetSaleByIdModel>(entity);
-        }
+
+			if (IncludeDetails)
+			{
+				var entity = await _dataBaseService.VentaCab
+					.Include(x => x.Detalles)
+					.FirstOrDefaultAsync(x => x.VentaCabId == SaleId);
+				if (entity == null) throw new Exception(Messages.RecordNotFound);
+				return  _mapper.Map<ResponseSaleModel>(entity);
+			}
+			else
+			{
+				var entity = await _dataBaseService.VentaCab
+					.FirstOrDefaultAsync(x => x.VentaCabId == SaleId);
+
+				if (entity == null) throw new Exception(Messages.RecordNotFound);
+
+				return _mapper.Map<ResponseSaleModel>(entity);
+			}
+		}
     }
 }

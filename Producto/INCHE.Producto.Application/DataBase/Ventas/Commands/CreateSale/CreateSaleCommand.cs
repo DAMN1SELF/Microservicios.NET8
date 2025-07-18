@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using INCHE.Producto.Application.DataBase.Product;
 using INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById;
 using INCHE.Producto.Common.Constants;
 using INCHE.Producto.Domain.Entities.Producto;
@@ -10,22 +11,26 @@ namespace INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale
     {
         private readonly IDataBaseService _dataBaseService;
         private readonly IMapper _mapper;
-        public CreateSaleCommand(IDataBaseService dataBaseService,
-            IMapper mapper)
-        {
-            _dataBaseService = dataBaseService;
-            _mapper = mapper;
-        }
+		private readonly ITransactionalDbContext _transactionalContext;
 
-        public async Task<ResponseSaleModel> Execute(CreateSaleModel model)
+		public CreateSaleCommand(
+		IDataBaseService dataBaseService,
+		ITransactionalDbContext transactionalContext,
+		IMapper mapper)
+		{
+			_dataBaseService = dataBaseService;
+			_transactionalContext = transactionalContext;
+			_mapper = mapper;
+		}
+
+        public async Task<CreateSaleModel> Execute(CreateSaleModel model)
         {
 
-			using var transaction = await _dataBaseService.Database.BeginTransactionAsync();
-			
+
+			using var transaction = await _transactionalContext.BeginTransactionAsync();
 			try
 			{
 				var ventaCab = _mapper.Map<VentaCabEntity>(model);
-
 				await _dataBaseService.VentaCab.AddAsync(ventaCab);
 				await _dataBaseService.SaveAsync();
 
@@ -38,9 +43,10 @@ namespace INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale
 
 				await _dataBaseService.VentaDet.AddRangeAsync(detalles);
 				await _dataBaseService.SaveAsync();
+
 				await transaction.CommitAsync();
 
-				var resultModel = _mapper.Map<ResponseSaleModel>(ventaCab);
+				var resultModel = _mapper.Map<CreateSaleModel>(ventaCab);
 				return resultModel;
 			}
 			catch (Exception ex)

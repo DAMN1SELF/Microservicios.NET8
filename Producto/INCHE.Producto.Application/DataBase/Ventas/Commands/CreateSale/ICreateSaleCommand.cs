@@ -8,6 +8,6 @@ namespace INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale
 {
     public interface ICreateSaleCommand
     {
-        Task<ResponseSaleModel> Execute(CreateSaleModel model);
+        Task<CreateSaleModel> Execute(CreateSaleModel model);
     }
 }

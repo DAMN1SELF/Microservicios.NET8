@@ -4,6 +4,6 @@ namespace INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById
 {
     public interface IGetSaleByIdQuery
     {
-        Task<GetSaleByIdModel> Execute(int SaleId);
+        Task<ResponseSaleModel> Execute(int SaleId, bool IncludeDetails);
     }
 }
