@@ -1,6 +1,6 @@
-﻿//using AutoMapper;
-//using FluentValidation;
+﻿
 using AutoMapper;
+using FluentValidation;
 using INCHE.Producto.Application.Configuration;
 using INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.DeleteProduct;
@@ -8,6 +8,7 @@ using INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProducts;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductByName;
+using INCHE.Producto.Application.Validators.Product;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace INCHE.Producto.Application
@@ -23,8 +24,7 @@ namespace INCHE.Producto.Application
 
             services.AddSingleton(mapper.CreateMapper());
 
-     
-
+       
             #region Producto
             services.AddTransient<ICreateProductCommand, CreateProductCommand>();
             services.AddTransient<IUpdateProductCommand, UpdateProductCommand>();
@@ -33,11 +33,14 @@ namespace INCHE.Producto.Application
             services.AddTransient<IGetProductByIdQuery, GetProductByIdQuery>();
             services.AddTransient<IGetProductByNameQuery, GetProductByNameQuery>();
 
-            #endregion
+            services.AddScoped<IValidator<CreateProductModel>, CreateProductValidator>();
+            services.AddScoped<IValidator<UpdateProductModel>, UpdateProductValidator>();
+
+			#endregion
 
 
 
-            return services;
+			return services;
         }
     }
 }
