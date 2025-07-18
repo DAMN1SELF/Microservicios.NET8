@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 	<InvariantGlobalization>false</InvariantGlobalization>
+	<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	<DocumentationFile>E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

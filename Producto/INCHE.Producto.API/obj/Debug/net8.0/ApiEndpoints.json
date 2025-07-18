@@ -93,5 +93,116 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "api/v1/usuario/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "INCHE.Producto.Application.DataBase.User.Commands.UpdateUser.UpdateUserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "Method": "UpdatePassword",
+    "RelativePath": "api/v1/usuario/actualizar-clave",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "INCHE.Producto.Application.DataBase.User.Commands.UpdateUserPassword.UpdateUserPasswordModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "Method": "GetByUserNamePassword",
+    "RelativePath": "api/v1/usuario/autenticarse/{userName}/{password}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/usuario/eliminar/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "Method": "Create",
+    "RelativePath": "api/v1/usuario/insertar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "INCHE.Producto.Application.DataBase.User.Commands.CreateUser.CreateUserModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/usuario/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/usuario/obtener/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

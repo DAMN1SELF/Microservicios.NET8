@@ -185,3 +185,9 @@ E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Swashbuc
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\FluentValidation.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Azure.Security.KeyVault.Keys.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\INCHE.Producto.API.xml

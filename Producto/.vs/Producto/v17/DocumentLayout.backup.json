@@ -3,83 +3,12 @@
   "WorkspaceRootPath": "E:\\NET\\Microservicios.NET8\\Producto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\NET\\Microservicios.NET8\\API_Producto_Prueba Tecnica DANIEL INCHE.postman_collection.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{83B6412E-31CA-4D9F-8613-94CD072DB4E5}|INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.domain\\entities\\user\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83B6412E-31CA-4D9F-8613-94CD072DB4E5}|INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj|solutionrelative:inche.producto.domain\\entities\\user\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\dependencyinjectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\dependencyinjectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\validators\\product\\updateproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\validators\\product\\updateproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\validators\\product\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\validators\\product\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\dependencyinjectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\dependencyinjectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\commands\\createproduct\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\commands\\createproduct\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\commands\\createproduct\\icreateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\commands\\createproduct\\icreateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\commands\\deleteproduct\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\commands\\deleteproduct\\deleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\commands\\deleteproduct\\ideleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\commands\\deleteproduct\\ideleteproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\commands\\updateproduct\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\commands\\updateproduct\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\commands\\updateproduct\\updateproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\commands\\updateproduct\\updateproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\exceptions\\exceptionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\exceptions\\exceptionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{411F586F-3F39-4A15-9C5D-91769F883D5C}|INCHE.Producto.Common\\INCHE.Producto.Common.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.common\\dependencyinjectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{411F586F-3F39-4A15-9C5D-91769F883D5C}|INCHE.Producto.Common\\INCHE.Producto.Common.csproj|solutionrelative:inche.producto.common\\dependencyinjectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{411F586F-3F39-4A15-9C5D-91769F883D5C}|INCHE.Producto.Common\\INCHE.Producto.Common.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.common\\constants\\applicationconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{411F586F-3F39-4A15-9C5D-91769F883D5C}|INCHE.Producto.Common\\INCHE.Producto.Common.csproj|solutionrelative:inche.producto.common\\constants\\applicationconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\commands\\createproduct\\createproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\commands\\createproduct\\createproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\responseproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\responseproductmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\database\\product\\commands\\updateproduct\\iupdateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\database\\product\\commands\\updateproduct\\iupdateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83B6412E-31CA-4D9F-8613-94CD072DB4E5}|INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.domain\\entities\\producto\\productoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83B6412E-31CA-4D9F-8613-94CD072DB4E5}|INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj|solutionrelative:inche.producto.domain\\entities\\producto\\productoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,261 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "API_Producto_Prueba Tecnica DANIEL INCHE.postman_collection.json",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\API_Producto_Prueba Tecnica DANIEL INCHE.postman_collection.json",
-              "RelativeDocumentMoniker": "..\\API_Producto_Prueba Tecnica DANIEL INCHE.postman_collection.json",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\API_Producto_Prueba Tecnica DANIEL INCHE.postman_collection.json",
-              "RelativeToolTip": "..\\API_Producto_Prueba Tecnica DANIEL INCHE.postman_collection.json",
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\Entities\\User\\UserEntity.cs",
+              "RelativeDocumentMoniker": "INCHE.Producto.Domain\\Entities\\User\\UserEntity.cs",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\Entities\\User\\UserEntity.cs",
+              "RelativeToolTip": "INCHE.Producto.Domain\\Entities\\User\\UserEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-18T07:38:05.255Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T11:46:06.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\ProductoController.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.API\\ProductoController.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\ProductoController.cs",
-              "RelativeToolTip": "INCHE.Producto.API\\ProductoController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAswDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:03:38.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateProductCommand.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\CreateProductCommand.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T06:57:20.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DependencyInjectionService.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DependencyInjectionService.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DependencyInjectionService.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DependencyInjectionService.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DependencyInjectionService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:04:08.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DependencyInjectionService.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\DependencyInjectionService.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.API\\DependencyInjectionService.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\DependencyInjectionService.cs",
-              "RelativeToolTip": "INCHE.Producto.API\\DependencyInjectionService.cs",
+              "Title": "ProductoEntity.cs",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\Entities\\Producto\\ProductoEntity.cs",
+              "RelativeDocumentMoniker": "INCHE.Producto.Domain\\Entities\\Producto\\ProductoEntity.cs",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\Entities\\Producto\\ProductoEntity.cs",
+              "RelativeToolTip": "INCHE.Producto.Domain\\Entities\\Producto\\ProductoEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:03:36.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateProductValidator.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\Validators\\Product\\CreateProductValidator.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\Validators\\Product\\CreateProductValidator.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\Validators\\Product\\CreateProductValidator.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\Validators\\Product\\CreateProductValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T06:51:54.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateProductValidator.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\Validators\\Product\\UpdateProductValidator.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\Validators\\Product\\UpdateProductValidator.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\Validators\\Product\\UpdateProductValidator.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\Validators\\Product\\UpdateProductValidator.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA0wAAAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T06:55:47.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICreateProductCommand.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\ICreateProductCommand.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\ICreateProductCommand.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\ICreateProductCommand.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\ICreateProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:10:16.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IDeleteProductCommand.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\DeleteProduct\\IDeleteProductCommand.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\DeleteProduct\\IDeleteProductCommand.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\DeleteProduct\\IDeleteProductCommand.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\DeleteProduct\\IDeleteProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:10:14.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UpdateProductModel.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\UpdateProductModel.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\UpdateProductModel.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\UpdateProductModel.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\UpdateProductModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T06:58:52.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ExceptionManager.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\Exceptions\\ExceptionManager.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\Exceptions\\ExceptionManager.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\Exceptions\\ExceptionManager.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\Exceptions\\ExceptionManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:10:03.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\Program.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.API\\Program.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\Program.cs",
-              "RelativeToolTip": "INCHE.Producto.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:08:51.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DeleteProductCommand.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\DeleteProduct\\DeleteProductCommand.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\DeleteProduct\\DeleteProductCommand.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\DeleteProduct\\DeleteProductCommand.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\DeleteProduct\\DeleteProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:08:43.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DependencyInjectionService.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\DependencyInjectionService.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Common\\DependencyInjectionService.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\DependencyInjectionService.cs",
-              "RelativeToolTip": "INCHE.Producto.Common\\DependencyInjectionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:08:37.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UpdateProductCommand.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\UpdateProductCommand.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\UpdateProductCommand.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\UpdateProductCommand.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\UpdateProductCommand.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:08:40.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApplicationConstants.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\Constants\\ApplicationConstants.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Common\\Constants\\ApplicationConstants.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\Constants\\ApplicationConstants.cs",
-              "RelativeToolTip": "INCHE.Producto.Common\\Constants\\ApplicationConstants.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T07:08:36.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CreateProductModel.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\CreateProductModel.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\CreateProductModel.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\CreateProductModel.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\CreateProduct\\CreateProductModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T06:57:22.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IDataBaseService.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\IDataBaseService.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\IDataBaseService.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\IDataBaseService.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\IDataBaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T06:59:12.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ResponseProductModel.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\ResponseProductModel.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\ResponseProductModel.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\ResponseProductModel.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\ResponseProductModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T06:59:11.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IUpdateProductCommand.cs",
-              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\IUpdateProductCommand.cs",
-              "RelativeDocumentMoniker": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\IUpdateProductCommand.cs",
-              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\IUpdateProductCommand.cs",
-              "RelativeToolTip": "INCHE.Producto.Application\\DataBase\\Product\\Commands\\UpdateProduct\\IUpdateProductCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-18T06:58:51.352Z",
+              "WhenOpened": "2025-07-18T11:45:58.855Z",
               "EditorCaption": ""
             }
           ]

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "yTDKOE8rEKQ=",
+  "dgSpecHash": "syU3ZwWoVX8=",
   "success": true,
   "projectFilePath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\DAMN1SELF\\.nuget\\packages\\azure.security.keyvault.keys\\4.5.0\\azure.security.keyvault.keys.4.5.0.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\fluentvalidation\\11.1.1\\fluentvalidation.11.1.1.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.0\\microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",
@@ -27,6 +28,7 @@
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.6\\microsoft.data.sqlclient.5.1.6.nupkg.sha512",
+    "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.data.sqlclient.alwaysencrypted.azurekeyvaultprovider\\5.1.0\\microsoft.data.sqlclient.alwaysencrypted.azurekeyvaultprovider.5.1.0.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.1.0\\microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\DAMN1SELF\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.7\\microsoft.entityframeworkcore.9.0.7.nupkg.sha512",

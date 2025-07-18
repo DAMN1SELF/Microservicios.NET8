@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
 using INCHE.Producto.Common.Constants;
-using INCHE.Producto.Domain.Entities;
+using INCHE.Producto.Domain.Entities.Producto;
 
 namespace INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct
 {
