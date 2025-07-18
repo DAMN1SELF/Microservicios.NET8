@@ -5,7 +5,13 @@ using INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProducts;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductByName;
-using INCHE.Producto.Domain.Entities;
+using INCHE.Producto.Application.DataBase.User.Commands.CreateUser;
+using INCHE.Producto.Application.DataBase.User.Commands.UpdateUser;
+using INCHE.Producto.Application.DataBase.User.Queries.GetAllUser;
+using INCHE.Producto.Application.DataBase.User.Queries.GetUserById;
+using INCHE.Producto.Application.DataBase.User.Queries.GetUserByUserNameAndPassword;
+using INCHE.Producto.Domain.Entities.Producto;
+using INCHE.Producto.Domain.Entities.User;
 
 namespace INCHE.Producto.Application.Configuration
 {
@@ -14,8 +20,17 @@ namespace INCHE.Producto.Application.Configuration
         public MapperProfile()
         {
 
-            #region Producto
-            CreateMap<ProductoEntity, CreateProductModel>().ReverseMap()
+			#region User
+			CreateMap<UserEntity, CreateUserModel>().ReverseMap();
+			CreateMap<UserEntity, UpdateUserModel>().ReverseMap();
+			CreateMap<UserEntity, GetAllUserModel>().ReverseMap();
+			CreateMap<UserEntity, GetUserByIdModel>().ReverseMap();
+			CreateMap<UserEntity, GetUserByUserNameAndPasswordModel>().ReverseMap();
+			#endregion
+
+
+			#region Producto
+			CreateMap<ProductoEntity, CreateProductModel>().ReverseMap()
 				.ForMember(dest => dest.Nombre, opt => opt.MapFrom(src => src.FullName))
 				.ForMember(dest => dest.NumeroLote, opt => opt.MapFrom(src => src.BatchNumber))
 				.ForMember(dest => dest.Costo, opt => opt.MapFrom(src => src.Cost))
