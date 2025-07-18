@@ -4,10 +4,18 @@ using INCHE.Producto.Domain.Entities.Producto;
 using INCHE.Producto.Domain.Entities.User;
 using INCHE.Producto.Domain.Entities.Ventas;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
+
+
+
 
 namespace INCHE.Producto.Application.DataBase
 {
-    public interface IDataBaseService
+	public interface ITransactionalDbContext
+	{
+		Task<IDbContextTransaction> BeginTransactionAsync();
+	}
+	public interface IDataBaseService
     {
 		#region Users
 		DbSet<UserEntity> User { get; set; }

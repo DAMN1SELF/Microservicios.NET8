@@ -19,7 +19,11 @@ namespace INCHE.Producto.Persistence
 
             services.AddScoped<IDataBaseService, DataBaseService>();
 
-            return services;
+			services.AddScoped<ITransactionalDbContext>(provider =>
+	        provider.GetRequiredService<DataBaseService>());
+			//services.AddScoped<ITransactionalDbContext, DataBaseService>();
+
+			return services;
         }
     }
 }

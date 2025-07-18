@@ -11,11 +11,12 @@ using INCHE.Producto.Persistence.Configuration.Ventas;
 using INCHE.Producto.Persistence.Configuration.Movimientos;
 
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace INCHE.Producto.Persistence.DataBase
 {
-    public class DataBaseService: DbContext ,IDataBaseService
-    {
+    public class DataBaseService: DbContext ,IDataBaseService, ITransactionalDbContext
+	{
         public DataBaseService(DbContextOptions options): base(options)
         {
             
@@ -40,6 +41,11 @@ namespace INCHE.Producto.Persistence.DataBase
 		#region Movimientos
 		public DbSet<MovimientoCabEntity> MovimientoCab { get; set; }
 		public DbSet<MovimientoDetEntity> MovimientoDet { get; set; }
+
+		public async Task<IDbContextTransaction> BeginTransactionAsync()
+		{
+			return await Database.BeginTransactionAsync();
+		}
 		#endregion
 
 
