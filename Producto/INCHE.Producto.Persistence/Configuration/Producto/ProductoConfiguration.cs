@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace INCHE.Producto.Persistence.Configuration
+namespace INCHE.Producto.Persistence.Configuration.Producto
 {
 
 		public class ProductoConfiguration 

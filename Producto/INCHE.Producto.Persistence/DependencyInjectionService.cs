@@ -19,9 +19,6 @@ namespace INCHE.Producto.Persistence
 
             services.AddScoped<IDataBaseService, DataBaseService>();
 
-              
-
-
             return services;
         }
     }

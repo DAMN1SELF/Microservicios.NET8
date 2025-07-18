@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace INCHE.Producto.Persistence.Configuration
+namespace INCHE.Producto.Persistence.Configuration.Usuario
 {
     public class UserConfiguration
     {
