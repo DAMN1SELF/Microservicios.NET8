@@ -7,7 +7,7 @@ namespace INCHE.Producto.Persistence.Configuration.Ventas
 {
 	public class VentaDetConfiguration 
 	{
-		public VentaDetConfiguration(EntityTypeBuilder<VentaDet> builder)
+		public VentaDetConfiguration(EntityTypeBuilder<VentaDetEntity> builder)
 		{
 			builder.ToTable("VentaDet", "VENTAS");
 

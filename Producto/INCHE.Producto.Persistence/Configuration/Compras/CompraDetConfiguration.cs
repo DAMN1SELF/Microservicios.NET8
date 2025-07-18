@@ -6,7 +6,7 @@ namespace INCHE.Producto.Persistence.Configuration.Compras
 {
 	public class CompraDetConfiguration
 	{
-		public CompraDetConfiguration(EntityTypeBuilder<CompraDet> builder)
+		public CompraDetConfiguration(EntityTypeBuilder<CompraDetEntity> builder)
 		{
 			builder.ToTable("CompraDet", "COMPRAS");
 

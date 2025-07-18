@@ -7,7 +7,7 @@ namespace INCHE.Producto.Persistence.Configuration.Movimientos
 {
 	public class MovimientoDetConfiguration 
 	{
-		public MovimientoDetConfiguration(EntityTypeBuilder<MovimientoDet> builder)
+		public MovimientoDetConfiguration(EntityTypeBuilder<MovimientoDetEntity> builder)
 		{
 			builder.ToTable("MovimientoDet", "INVENTARIO");
 

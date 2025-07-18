@@ -26,20 +26,20 @@ namespace INCHE.Producto.Persistence.DataBase
 
 
 		#region Compras
-		public DbSet<CompraCab> CompraCab { get; set; }
-		public DbSet<CompraDet> CompraDet { get; set; }
+		public DbSet<CompraCabEntity> CompraCab { get; set; }
+		public DbSet<CompraDetEntity> CompraDet { get; set; }
 		#endregion
 
 
 		#region Compras
-		public DbSet<VentaCab> VentaCab { get; set; }
-		public DbSet<VentaDet> VentaDet { get; set; }
+		public DbSet<VentaCabEntity> VentaCab { get; set; }
+		public DbSet<VentaDetEntity> VentaDet { get; set; }
 		#endregion
 
 
 		#region Movimientos
-		public DbSet<MovimientoCab> MovimientoCab { get; set; }
-		public DbSet<MovimientoDet> MovimientoDet { get; set; }
+		public DbSet<MovimientoCabEntity> MovimientoCab { get; set; }
+		public DbSet<MovimientoDetEntity> MovimientoDet { get; set; }
 		#endregion
 
 
@@ -57,12 +57,12 @@ namespace INCHE.Producto.Persistence.DataBase
 		{
 			new UserConfiguration(modelBuilder.Entity<UserEntity>());
 			new ProductoConfiguration(modelBuilder.Entity<ProductoEntity>());
-			new CompraCabConfiguration(modelBuilder.Entity<CompraCab>());
-			new CompraDetConfiguration(modelBuilder.Entity<CompraDet>());
-			new VentaCabConfiguration(modelBuilder.Entity<VentaCab>());
-			new VentaDetConfiguration(modelBuilder.Entity<VentaDet>());
-			new MovimientoCabConfiguration(modelBuilder.Entity<MovimientoCab>());
-			new MovimientoDetConfiguration(modelBuilder.Entity<MovimientoDet>());
+			new CompraCabConfiguration(modelBuilder.Entity<CompraCabEntity>());
+			new CompraDetConfiguration(modelBuilder.Entity<CompraDetEntity>());
+			new VentaCabConfiguration(modelBuilder.Entity<VentaCabEntity>());
+			new VentaDetConfiguration(modelBuilder.Entity<VentaDetEntity>());
+			new MovimientoCabConfiguration(modelBuilder.Entity<MovimientoCabEntity>());
+			new MovimientoDetConfiguration(modelBuilder.Entity<MovimientoDetEntity>());
 		}
 
     }
