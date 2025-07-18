@@ -5,20 +5,20 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-//using INCHE.Producto.Application.DataBase;
-//using INCHE.Producto.Persistence.DataBase;
+using INCHE.Producto.Application.DataBase;
+using INCHE.Producto.Persistence.DataBase;
 
-namespace INCHE.Persistence
+namespace INCHE.Producto.Persistence
 {
     public static class DependencyInjectionService
     {
         public static IServiceCollection AddPersistence(this IServiceCollection services,
             IConfiguration configuration)
         {
-            //services.AddDbContext<DataBaseService>(options =>
-            //options.UseSqlServer(configuration["SQLConnectionString"]));
+            services.AddDbContext<DataBaseService>(options =>
+            options.UseSqlServer(configuration["SQLConnectionString"]));
 
-            //services.AddScoped<IDataBaseService, DataBaseService>();
+            services.AddScoped<IDataBaseService, DataBaseService>();
 
             //if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "local")
             //{
@@ -48,8 +48,7 @@ namespace INCHE.Persistence
             //    });
             //}
 
-            //return services;
-            return null;
+            return services;
         }
     }
 }
