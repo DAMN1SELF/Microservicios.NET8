@@ -1,6 +1,8 @@
 ﻿
 using AutoMapper;
+using INCHE.Producto.Common.Constants;
 using INCHE.Producto.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct
 {
@@ -15,12 +17,21 @@ namespace INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct
             _mapper = mapper;
         }
 
-        public async Task<UpdateProductModel> Execute(UpdateProductModel model)
+        public async Task<ResponseProductModel> Execute(int productoId, UpdateProductModel model)
         {
-            var entity = _mapper.Map<ProductoEntity>(model);
-            _dataBaseService.Producto.Update(entity);
+
+			var entity = await _dataBaseService.Producto.FindAsync(productoId);
+
+			if (entity == null) throw new Exception(Messages.RecordNotFound);
+			
+            _mapper.Map(model, entity);
+			    entity.FechaRegistro = DateTime.UtcNow;
+                entity.Id = productoId;
+			_dataBaseService.Producto.Update(entity);
             await _dataBaseService.SaveAsync();
-            return model;
-        }
+
+			var resultModel = _mapper.Map<ResponseProductModel>(entity);
+			return resultModel;
+		}
     }
 }

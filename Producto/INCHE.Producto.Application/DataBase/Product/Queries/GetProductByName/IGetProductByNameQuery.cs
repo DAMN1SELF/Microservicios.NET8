@@ -3,6 +3,6 @@ namespace INCHE.Producto.Application.DataBase.Product.Queries.GetProductByName
 {
     public interface IGetProductByNameQuery
     {
-        Task<GetProductByNameModel> Execute(string documentNumber);
+		Task<List<GetProductByNameModel>> Execute(string nombreProducto);
     }
 }

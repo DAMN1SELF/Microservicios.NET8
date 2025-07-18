@@ -8,6 +8,6 @@ namespace INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct
 {
     public interface IUpdateProductCommand
     {
-        Task<UpdateProductModel> Execute(UpdateProductModel model);
+        Task<ResponseProductModel> Execute(int ProductoId, UpdateProductModel model);
     }
 }

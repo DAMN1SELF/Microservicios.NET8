@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
+using INCHE.Producto.Common.Constants;
 using INCHE.Producto.Domain.Entities;
 
 namespace INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct
@@ -14,12 +16,25 @@ namespace INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct
             _mapper = mapper;
         }
 
-        public async Task<CreateProductModel> Execute(CreateProductModel model)
+        public async Task<ResponseProductModel> Execute(CreateProductModel model)
         {
-            var entity = _mapper.Map<ProductoEntity>(model);
-            await _dataBaseService.Producto.AddAsync(entity);
+			try
+			{
+				var entity = _mapper.Map<ProductoEntity>(model);
+				entity.FechaRegistro = DateTime.UtcNow; 
+                entity.PrecioVenta = model.Cost * ApplicationConstants.MARGEN_PRECIO_VENTA;
+          
+			await _dataBaseService.Producto.AddAsync(entity);
             await _dataBaseService.SaveAsync();
-            return model;
-        }
+			var resultModel = _mapper.Map<ResponseProductModel>(entity);
+			return resultModel;
+
+			}
+			catch (Exception ex)
+			{
+				throw new ApplicationException(Messages.RecordCreationFailed, ex);
+
+			}
+		}
     }
 }
