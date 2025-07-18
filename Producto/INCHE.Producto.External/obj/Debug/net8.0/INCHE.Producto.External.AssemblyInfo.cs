@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("INCHE.Producto.External")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d826ac000cc3bbd16978984986210ff78911d30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b563baeaa1c981fbb833548d4dae83b0427842c")]
 [assembly: System.Reflection.AssemblyProductAttribute("INCHE.Producto.External")]
 [assembly: System.Reflection.AssemblyTitleAttribute("INCHE.Producto.External")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

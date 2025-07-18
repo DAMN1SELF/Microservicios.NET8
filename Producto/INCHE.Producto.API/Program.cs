@@ -1,34 +1,36 @@
 using INCHE.Producto.Application.DataBase;
 using INCHE.Producto.Persistence.DataBase;
 using Microsoft.EntityFrameworkCore;
+using INCHE.Producto.Api;
+using DANIEL.Producto.Common;
+using INCHE.Producto.Application;
+using INCHE.Producto.External;
+using INCHE.Producto.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddDbContext<DataBaseService>(options=>
-options.UseSqlServer(builder.Configuration["SQLConnectionString"]));
+builder.Services
+	.AddWebApi()
+	.AddCommon()
+	.AddApplication()
+	.AddExternal(builder.Configuration)
+	.AddPersistence(builder.Configuration);
 
-builder.Services.AddScoped<IDataBaseService, DataBaseService>();
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();   
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.MapPost("/createProductoTest", async (IDataBaseService _databaseService) =>
+
+if (app.Environment.IsDevelopment())
 {
-	var producto = new INCHE.Producto.Domain.Entities.ProductoEntity
-	{
-		Nombre = "Laptop Lenovo X",
-		NumeroLote = "LT00000001",
-		FechaRegistro = DateTime.Now,
-		Costo = 1550.75m,
-		PrecioVenta = 2100.99m
-	};
-
-	await _databaseService.Producto.AddAsync(producto);
-	await _databaseService.SaveAsync();
-
-	return Results.Ok("Producto creado OK");
-});
+	app.UseSwagger();
+	app.UseSwaggerUI();
+}
 
 
+app.MapControllers();
 app.Run();

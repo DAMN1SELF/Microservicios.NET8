@@ -12,8 +12,8 @@ namespace INCHE.Producto.Api
             //    options.SwaggerDoc("v1", new OpenApiInfo
             //    {
             //        Version = "v1",
-            //        Title = "Tarker Booking API",
-            //        Description = "Administración de APIs para Booking App"
+            //        Title = "API Producto",
+            //        Description = "API REST,DDD,CleanCode,CQRS,DTOs,Mappers,ID,Builder"
                     
             //    });
             //    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

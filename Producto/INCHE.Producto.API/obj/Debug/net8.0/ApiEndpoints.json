@@ -1,18 +1,97 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
-    "RelativePath": "createProductoTest",
+    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "Method": "GetByName",
+    "RelativePath": "api/v1/Producto/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "Method": "GetById",
+    "RelativePath": "api/v1/Producto/buscar/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Producto/eliminar/{Id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "Method": "Create",
+    "RelativePath": "api/v1/Producto/insertar",
     "HttpMethod": "POST",
-    "IsController": false,
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct.CreateProductModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/Producto/listar",
+    "HttpMethod": "GET",
+    "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "Method": "Update",
+    "RelativePath": "api/v1/Producto/modificar/{Id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 200
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct.UpdateProductModel",
+        "IsRequired": true
       }
-    ]
+    ],
+    "ReturnTypes": []
   }
 ]
