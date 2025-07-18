@@ -1,7 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using INCHE.Producto.Persistence.Configuration;
 using INCHE.Producto.Application.DataBase;
-using INCHE.Producto.Domain.Entities;
-using INCHE.Persistence.Configuration;
+using INCHE.Producto.Domain.Entities.Producto;
+using INCHE.Producto.Domain.Entities.User;
+using Microsoft.EntityFrameworkCore;
 
 namespace INCHE.Producto.Persistence.DataBase
 {
@@ -12,7 +13,8 @@ namespace INCHE.Producto.Persistence.DataBase
             
         }
 
-        public DbSet<ProductoEntity> Producto { get; set; }
+		public DbSet<UserEntity> User { get; set; }
+		public DbSet<ProductoEntity> Producto { get; set; }
 
         public async Task<bool> SaveAsync()
         {
@@ -25,8 +27,9 @@ namespace INCHE.Producto.Persistence.DataBase
         }
 
         private void EntityConfiguration(ModelBuilder modelBuilder)
-        {
-            new ProductoConfiguration(modelBuilder.Entity<ProductoEntity>());
+		{
+			new UserConfiguration(modelBuilder.Entity<UserEntity>());
+			new ProductoConfiguration(modelBuilder.Entity<ProductoEntity>());
         }
 
     }

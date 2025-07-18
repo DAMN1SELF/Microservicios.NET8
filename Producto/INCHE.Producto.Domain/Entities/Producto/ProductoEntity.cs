@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace INCHE.Producto.Domain.Entities
+namespace INCHE.Producto.Domain.Entities.Producto
 {
 	public  class ProductoEntity
 	{

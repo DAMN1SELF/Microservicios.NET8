@@ -1,9 +1,8 @@
-﻿
-using INCHE.Producto.Domain.Entities;
+﻿using INCHE.Producto.Domain.Entities.Producto;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace INCHE.Persistence.Configuration
+namespace INCHE.Producto.Persistence.Configuration
 {
 
 		public class ProductoConfiguration 
