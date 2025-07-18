@@ -1,0 +1,6 @@
+@INCHE.Producto.API_HostAddress = http://localhost:5188
+
+GET {{INCHE.Producto.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

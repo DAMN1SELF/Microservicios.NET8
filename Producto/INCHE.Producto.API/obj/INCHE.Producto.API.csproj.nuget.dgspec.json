@@ -1,0 +1,469 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\INCHE.Producto.API.csproj": {}
+  },
+  "projects": {
+    "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\INCHE.Producto.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\INCHE.Producto.API.csproj",
+        "projectName": "INCHE.Producto.API",
+        "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\INCHE.Producto.API.csproj",
+        "packagesPath": "C:\\Users\\DAMN1SELF\\.nuget\\packages\\",
+        "outputPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DAMN1SELF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj"
+              },
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\INCHE.Producto.Common.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\INCHE.Producto.Common.csproj"
+              },
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.External\\INCHE.Producto.External.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.External\\INCHE.Producto.External.csproj"
+              },
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj",
+        "projectName": "INCHE.Producto.Application",
+        "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj",
+        "packagesPath": "C:\\Users\\DAMN1SELF\\.nuget\\packages\\",
+        "outputPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DAMN1SELF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\INCHE.Producto.Common.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\INCHE.Producto.Common.csproj"
+              },
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\INCHE.Producto.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\INCHE.Producto.Common.csproj",
+        "projectName": "INCHE.Producto.Common",
+        "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\INCHE.Producto.Common.csproj",
+        "packagesPath": "C:\\Users\\DAMN1SELF\\.nuget\\packages\\",
+        "outputPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DAMN1SELF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj",
+        "projectName": "INCHE.Producto.Domain",
+        "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj",
+        "packagesPath": "C:\\Users\\DAMN1SELF\\.nuget\\packages\\",
+        "outputPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DAMN1SELF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.External\\INCHE.Producto.External.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.External\\INCHE.Producto.External.csproj",
+        "projectName": "INCHE.Producto.External",
+        "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.External\\INCHE.Producto.External.csproj",
+        "packagesPath": "C:\\Users\\DAMN1SELF\\.nuget\\packages\\",
+        "outputPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.External\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DAMN1SELF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj"
+              },
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj",
+        "projectName": "INCHE.Producto.Persistence",
+        "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj",
+        "packagesPath": "C:\\Users\\DAMN1SELF\\.nuget\\packages\\",
+        "outputPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DAMN1SELF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj"
+              },
+              "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj": {
+                "projectPath": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Domain\\INCHE.Producto.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

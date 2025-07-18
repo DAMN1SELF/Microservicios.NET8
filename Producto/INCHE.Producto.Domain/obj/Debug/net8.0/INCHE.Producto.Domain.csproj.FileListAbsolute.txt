@@ -1,0 +1,12 @@
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\bin\Debug\net8.0\INCHE.Producto.Domain.deps.json
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\bin\Debug\net8.0\INCHE.Producto.Domain.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\bin\Debug\net8.0\INCHE.Producto.Domain.pdb
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\INCHE.Producto.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\INCHE.Producto.Domain.AssemblyInfoInputs.cache
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\INCHE.Producto.Domain.AssemblyInfo.cs
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\INCHE.Producto.Domain.csproj.CoreCompileInputs.cache
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\INCHE.Producto.Domain.sourcelink.json
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\INCHE.Producto.Domain.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\refint\INCHE.Producto.Domain.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\INCHE.Producto.Domain.pdb
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.Domain\obj\Debug\net8.0\ref\INCHE.Producto.Domain.dll

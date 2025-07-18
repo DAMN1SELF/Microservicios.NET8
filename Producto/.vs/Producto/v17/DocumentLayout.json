@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\NET\\Microservicios.NET8\\Producto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\inche.producto.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\inche.producto.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.api\\inche.producto.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{AD8B91C0-02F4-499B-9185-91E076627488}|INCHE.Producto.API\\INCHE.Producto.API.csproj|solutionrelative:inche.producto.api\\inche.producto.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.application\\inche.producto.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{23D4093B-8433-49C4-9344-1BD17EFBFD33}|INCHE.Producto.Application\\INCHE.Producto.Application.csproj|solutionrelative:inche.producto.application\\inche.producto.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BEC7D4-4B1D-52EA-5D8D-2D41963E4524}|INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.persistence\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1BEC7D4-4B1D-52EA-5D8D-2D41963E4524}|INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj|solutionrelative:inche.producto.persistence\\database\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BEC7D4-4B1D-52EA-5D8D-2D41963E4524}|INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.persistence\\dependencyinjectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1BEC7D4-4B1D-52EA-5D8D-2D41963E4524}|INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj|solutionrelative:inche.producto.persistence\\dependencyinjectionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1BEC7D4-4B1D-52EA-5D8D-2D41963E4524}|INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj|e:\\net\\microservicios.net8\\producto\\inche.producto.persistence\\configuration\\productoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1BEC7D4-4B1D-52EA-5D8D-2D41963E4524}|INCHE.Producto.Persistence\\INCHE.Producto.Persistence.csproj|solutionrelative:inche.producto.persistence\\configuration\\productoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\Program.cs",
+              "RelativeDocumentMoniker": "INCHE.Producto.API\\Program.cs",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\Program.cs",
+              "RelativeToolTip": "INCHE.Producto.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:58:36.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "INCHE.Producto.API",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\INCHE.Producto.API.csproj",
+              "RelativeDocumentMoniker": "INCHE.Producto.API\\INCHE.Producto.API.csproj",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\INCHE.Producto.API.csproj",
+              "RelativeToolTip": "INCHE.Producto.API\\INCHE.Producto.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-18T00:43:42.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "INCHE.Producto.API\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "INCHE.Producto.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-18T00:41:28.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "INCHE.Producto.API\\appsettings.Development.json",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\appsettings.Development.json",
+              "RelativeToolTip": "INCHE.Producto.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-18T00:41:19.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\appsettings.json",
+              "RelativeDocumentMoniker": "INCHE.Producto.API\\appsettings.json",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\appsettings.json",
+              "RelativeToolTip": "INCHE.Producto.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-18T00:41:16.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "INCHE.Producto.API.http",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\INCHE.Producto.API.http",
+              "RelativeDocumentMoniker": "INCHE.Producto.API\\INCHE.Producto.API.http",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.API\\INCHE.Producto.API.http",
+              "RelativeToolTip": "INCHE.Producto.API\\INCHE.Producto.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-07-18T00:41:14.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "INCHE.Producto.Application",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj",
+              "RelativeDocumentMoniker": "INCHE.Producto.Application\\INCHE.Producto.Application.csproj",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Application\\INCHE.Producto.Application.csproj",
+              "RelativeToolTip": "INCHE.Producto.Application\\INCHE.Producto.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-18T00:37:34.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataBaseService.cs",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\DataBase\\DataBaseService.cs",
+              "RelativeDocumentMoniker": "INCHE.Producto.Persistence\\DataBase\\DataBaseService.cs",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\DataBase\\DataBaseService.cs",
+              "RelativeToolTip": "INCHE.Producto.Persistence\\DataBase\\DataBaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:36:21.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DependencyInjectionService.cs",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\DependencyInjectionService.cs",
+              "RelativeDocumentMoniker": "INCHE.Producto.Persistence\\DependencyInjectionService.cs",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\DependencyInjectionService.cs",
+              "RelativeToolTip": "INCHE.Producto.Persistence\\DependencyInjectionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:36:20.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductoConfiguration.cs",
+              "DocumentMoniker": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\Configuration\\ProductoConfiguration.cs",
+              "RelativeDocumentMoniker": "INCHE.Producto.Persistence\\Configuration\\ProductoConfiguration.cs",
+              "ToolTip": "E:\\NET\\Microservicios.NET8\\Producto\\INCHE.Producto.Persistence\\Configuration\\ProductoConfiguration.cs",
+              "RelativeToolTip": "INCHE.Producto.Persistence\\Configuration\\ProductoConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:36:17.174Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
