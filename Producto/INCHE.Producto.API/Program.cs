@@ -35,6 +35,19 @@ builder.Services.AddHttpClient("API_Producto", client =>
 });
 
 
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy("AllowFrontend",
+		policy => policy
+			.WithOrigins(
+				"http://localhost:4200"   // Angular
+			)
+			.AllowAnyHeader()
+			.AllowAnyMethod()
+			.AllowCredentials() // si necesitas enviar cookies/jwt por headers
+	);
+});
+
 var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
@@ -42,6 +55,8 @@ app.UseSwaggerUI(options =>
 	options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
 	options.RoutePrefix = string.Empty;
 });
+
+
 
 app.MapControllers();
 app.Run();
