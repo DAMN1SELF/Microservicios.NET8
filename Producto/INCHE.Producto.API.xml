@@ -62,12 +62,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:INCHE.Producto.API.Controllers.MovimientoController.ListMovementbyId2(System.Int32,INCHE.Producto.Application.DataBase.Inventory.Queries.GetMovementById.IGetMovementByIdQuery)">
-            <summary>
-            buscar una movimiento por su ID con detalles
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:INCHE.Producto.API.Controllers.VentaController.RegisterSale(INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale.CreateSaleModel,INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale.ICreateSaleCommand)">
             <summary>
             Registrar una nueva venta

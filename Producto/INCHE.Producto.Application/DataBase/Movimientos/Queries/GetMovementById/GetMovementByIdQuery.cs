@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using INCHE.Producto.Application.DataBase.GetMovementById;
 using INCHE.Producto.Common.Constants;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -16,26 +17,23 @@ namespace INCHE.Producto.Application.DataBase.Inventory.Queries.GetMovementById
             _mapper = mapper;
         }
 
-        public async Task<ResponseMovementModel> Execute(int PurchaseId, bool IncludeDetails)
+        public async Task<List<MovementByIdModel>> Execute(int idProducto)
         {
 
-			if (IncludeDetails)
+		var movimientos = await _dataBaseService.MovimientoDet
+			.Where(md => md.ProductoId == idProducto)
+			.Include(md => md.MovimientoCab)
+			.Select(md => new MovementByIdModel
 			{
-				var entity = await _dataBaseService.MovimientoCab
-					.Include(x => x.Detalles)
-					.FirstOrDefaultAsync(x => x.MovimientoCabId == PurchaseId);
-				if (entity == null) throw new Exception(Messages.RecordNotFound);
-				return  _mapper.Map<ResponseMovementModel>(entity);
-			}
-			else
-			{
-				var entity = await _dataBaseService.MovimientoCab
-					.FirstOrDefaultAsync(x => x.MovimientoCabId == PurchaseId);
+				tipoMovimiento =md.MovimientoCab.TipoMovimiento,
+				fechaRegistro = md.MovimientoCab.FechaRegistro,
+				cantidad = (int)md.Cantidad 
+			})
+			.OrderBy(m => m.fechaRegistro)
+			.ToListAsync();
 
-				if (entity == null) throw new Exception(Messages.RecordNotFound);
-
-				return _mapper.Map<ResponseMovementModel>(entity);
-			}
+			return movimientos;
 		}
-    }
+
+	}
 }

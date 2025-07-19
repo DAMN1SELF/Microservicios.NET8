@@ -70,30 +70,19 @@ namespace INCHE.Producto.API.Controllers
 
 
 		/// <summary>
-		///	 Recuperar una movimiento por su ID
+		///	 Recuperar una movimiento por su ID Producto
 		/// </summary>
 		/// <returns></returns>
-		[HttpGet("buscar-movimiento/{Id}")]
+		[HttpGet("buscar-movimiento-detallado/{IdProducto}")]
 		public async Task<IActionResult> ListMovementbyId(
-		int Id,
+		int IdProducto,
 		[FromServices] IGetMovementByIdQuery getMovement)
 		{
-			var data = await getMovement.Execute(Id,IncludeDetails: false);
+			var data = await getMovement.Execute(IdProducto);
 			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, Messages.RecordsRetrieved));
 		}
 
-		/// <summary>
-		/// buscar una movimiento por su ID con detalles
-		/// </summary>
-		/// <returns></returns>
-		[HttpGet("buscar-movimiento-detallada/{Id}")]
-		public async Task<IActionResult> ListMovementbyId2(
-		int Id,
-		[FromServices] IGetMovementByIdQuery getMovement)
-		{
-			var data = await getMovement.Execute(Id, IncludeDetails: true);
-			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, Messages.RecordsRetrieved));
-		}
+		
 	}
 
 }

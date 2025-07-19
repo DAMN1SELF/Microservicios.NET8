@@ -20,7 +20,7 @@ namespace INCHE.Producto.Application.DataBase.Product.Queries.GetProductByName
 		{
 			var listEntities = await _dataBaseService.Producto
 							.Where(x => x.Nombre.ToLower().Contains(nombreProducto.ToLower()))
-							.Take(7)
+							.Take(10)
 							.ToListAsync();
 
 			return _mapper.Map<List<GetProductByNameModel>>(listEntities);

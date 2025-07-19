@@ -69,30 +69,14 @@
   },
   {
     "ContainingType": "INCHE.Producto.API.Controllers.MovimientoController",
-    "Method": "ListMovementbyId2",
-    "RelativePath": "api/v1/Movimiento/buscar-movimiento-detallada/{Id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "INCHE.Producto.API.Controllers.MovimientoController",
     "Method": "ListMovementbyId",
-    "RelativePath": "api/v1/Movimiento/buscar-movimiento/{Id}",
+    "RelativePath": "api/v1/Movimiento/buscar-movimiento-detallado/{IdProducto}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "IdProducto",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -227,6 +211,16 @@
   },
   {
     "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
+    "Method": "GetAllwithStock",
+    "RelativePath": "api/v1/Producto/listarStock",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
     "Method": "Update",
     "RelativePath": "api/v1/Producto/modificar/{Id}",
     "HttpMethod": "PUT",
@@ -280,20 +274,15 @@
   },
   {
     "ContainingType": "INCHE.Producto.API.Controllers.UserController",
-    "Method": "GetByUserNamePassword",
-    "RelativePath": "api/v1/usuario/autenticarse/{userName}/{password}",
-    "HttpMethod": "GET",
+    "Method": "Autenticarse",
+    "RelativePath": "api/v1/usuario/autenticarse",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userName",
-        "Type": "System.String",
-        "IsRequired": true
-      },
-      {
-        "Name": "password",
-        "Type": "System.String",
+        "Name": "login",
+        "Type": "INCHE.Producto.Application.DataBase.User.Commands.AuthUser.AuthUserModel",
         "IsRequired": true
       }
     ],

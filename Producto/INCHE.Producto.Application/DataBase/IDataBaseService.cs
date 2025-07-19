@@ -38,5 +38,6 @@ namespace INCHE.Producto.Application.DataBase
 		#endregion
 		Task<IDbContextTransaction> BeginTransactionAsync();
 		Task<bool> SaveAsync();
-    }
+
+	}
 }

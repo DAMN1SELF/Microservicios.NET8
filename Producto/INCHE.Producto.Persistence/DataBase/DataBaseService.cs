@@ -1,21 +1,21 @@
 ﻿using INCHE.Producto.Application.DataBase;
+using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProductsStock;
 using INCHE.Producto.Domain.Entities.Compras;
 using INCHE.Producto.Domain.Entities.Movimientos;
 using INCHE.Producto.Domain.Entities.Producto;
 using INCHE.Producto.Domain.Entities.User;
 using INCHE.Producto.Domain.Entities.Ventas;
+using INCHE.Producto.Persistence.Configuration.Compras;
+using INCHE.Producto.Persistence.Configuration.Movimientos;
 using INCHE.Producto.Persistence.Configuration.Producto;
 using INCHE.Producto.Persistence.Configuration.Usuario;
-using INCHE.Producto.Persistence.Configuration.Compras;
 using INCHE.Producto.Persistence.Configuration.Ventas;
-using INCHE.Producto.Persistence.Configuration.Movimientos;
-
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
 namespace INCHE.Producto.Persistence.DataBase
 {
-    public class DataBaseService: DbContext ,IDataBaseService
+    public class DataBaseService: DbContext , IDataBaseService
 	{
         public DataBaseService(DbContextOptions options): base(options)
         {
@@ -71,5 +71,6 @@ namespace INCHE.Producto.Persistence.DataBase
 			new MovimientoDetConfiguration(modelBuilder.Entity<MovimientoDetEntity>());
 		}
 
-    }
+		
+	}
 }

@@ -12,6 +12,7 @@ using INCHE.Producto.Application.DataBase.Purchase;
 using INCHE.Producto.Application.DataBase.Purchase.Commands.CreatePurchase;
 using INCHE.Producto.Application.DataBase.Sale;
 using INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale;
+using INCHE.Producto.Application.DataBase.User.Commands.AuthUser;
 using INCHE.Producto.Application.DataBase.User.Commands.CreateUser;
 using INCHE.Producto.Application.DataBase.User.Commands.UpdateUser;
 using INCHE.Producto.Application.DataBase.User.Queries.GetAllUser;
@@ -36,6 +37,12 @@ namespace INCHE.Producto.Application.Configuration
 			CreateMap<UserEntity, GetAllUserModel>().ReverseMap();
 			CreateMap<UserEntity, GetUserByIdModel>().ReverseMap();
 			CreateMap<UserEntity, GetUserByUserNameAndPasswordModel>().ReverseMap();
+
+
+			CreateMap<UserEntity, ResponseAuthUserModel>()
+		   .ForMember(dest => dest.Token, opt => opt.Ignore()); 
+
+
 			#endregion
 
 			#region Producto
@@ -236,11 +243,11 @@ namespace INCHE.Producto.Application.Configuration
 				.ForMember(dest => dest.NombreProducto, opt => opt.MapFrom(src => src.nombre_item))
 				.ForMember(dest => dest.PrecioProducto, opt => opt.MapFrom(src => src.precio_item));
 
-		#endregion
+			#endregion
 
-		#region Movimientos
+			#region Movimientos
 
-		CreateMap<MovimientoCabEntity, ResponseMovementModel>()
+			CreateMap<MovimientoCabEntity, ResponseMovementModel>()
 				.ForMember(dest => dest.MovimientoCabId, opt => opt.MapFrom(src => src.MovimientoCabId))
 				.ForMember(dest => dest.FechaRegistro, opt => opt.MapFrom(src => src.FechaRegistro))
 				.ForMember(dest => dest.TipoMovimiento, opt => opt.MapFrom(src => src.TipoMovimiento))

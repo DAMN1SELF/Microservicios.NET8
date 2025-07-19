@@ -11,6 +11,7 @@ using INCHE.Producto.Application.DataBase.Product.Commands.DeleteProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.PatchProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProducts;
+using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProductsStock;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductByName;
 using INCHE.Producto.Application.DataBase.Purchase.Commands.CreatePurchase;
@@ -19,6 +20,7 @@ using INCHE.Producto.Application.DataBase.Purchase.Queries.GetPurchaseById;
 using INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale;
 using INCHE.Producto.Application.DataBase.Sale.Queries.GetAllSales;
 using INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById;
+using INCHE.Producto.Application.DataBase.User.Commands.AuthUser;
 using INCHE.Producto.Application.DataBase.User.Commands.CreateUser;
 using INCHE.Producto.Application.DataBase.User.Commands.DeleteUser;
 using INCHE.Producto.Application.DataBase.User.Commands.UpdateUser;
@@ -57,6 +59,8 @@ namespace INCHE.Producto.Application
 			services.AddScoped<IValidator<UpdateUserPasswordModel>, UpdateUserPasswordValidator>();
 			services.AddScoped<IValidator<(string, string)>, GetUserByUserNameAndPasswordValidator>();
 
+			services.AddTransient<IAuthUserCommand, AuthUserCommand>();
+			services.AddScoped<IValidator<AuthUserModel>, AuthUserValidator>();
 			#endregion
 
 			#region Producto
@@ -69,8 +73,9 @@ namespace INCHE.Producto.Application
             services.AddTransient<IGetAllProductQuery, GetAllProductQuery>();
             services.AddTransient<IGetProductByIdQuery, GetProductByIdQuery>();
             services.AddTransient<IGetProductByNameQuery, GetProductByNameQuery>();
+            services.AddTransient<IGetAllProductStockQuery, GetAllProductStockQuery>();
 
-            services.AddScoped<IValidator<CreateProductModel>, CreateProductValidator>();
+			services.AddScoped<IValidator<CreateProductModel>, CreateProductValidator>();
             services.AddScoped<IValidator<UpdateProductModel>, UpdateProductValidator>();
 
 			#endregion

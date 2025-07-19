@@ -170,7 +170,7 @@
         }
       }
     },
-    "/api/v1/Movimiento/buscar-movimiento/{Id}": {
+    "/api/v1/Movimiento/buscar-movimiento-detallado/{IdProducto}": {
       "get": {
         "tags": [
           "Movimiento"
@@ -178,31 +178,7 @@
         "summary": "Recuperar una movimiento por su ID",
         "parameters": [
           {
-            "name": "Id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/v1/Movimiento/buscar-movimiento-detallada/{Id}": {
-      "get": {
-        "tags": [
-          "Movimiento"
-        ],
-        "summary": "buscar una movimiento por su ID con detalles",
-        "parameters": [
-          {
-            "name": "Id",
+            "name": "IdProducto",
             "in": "path",
             "required": true,
             "schema": {
@@ -292,6 +268,18 @@
       }
     },
     "/api/v1/Producto/listar": {
+      "get": {
+        "tags": [
+          "Producto"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Producto/listarStock": {
       "get": {
         "tags": [
           "Producto"
@@ -561,29 +549,30 @@
         }
       }
     },
-    "/api/v1/usuario/autenticarse/{userName}/{password}": {
-      "get": {
+    "/api/v1/usuario/autenticarse": {
+      "post": {
         "tags": [
           "User"
         ],
-        "parameters": [
-          {
-            "name": "userName",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "password",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthUserModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthUserModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthUserModel"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -701,6 +690,20 @@
   },
   "components": {
     "schemas": {
+      "AuthUserModel": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateMovementDetModel": {
         "type": "object",
         "properties": {

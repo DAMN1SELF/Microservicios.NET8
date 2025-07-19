@@ -1,4 +1,5 @@
-﻿using System;
+﻿using INCHE.Producto.Application.DataBase.User.Commands.AuthUser;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace INCHE.Producto.Application.External.GetTokenJwt
 {
     public interface IGetTokenJwtService
     {
-		string Execute(string userId, string userName = null);
+		string Execute(AuthUserModel model);
 	}
 }

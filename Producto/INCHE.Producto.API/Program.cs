@@ -19,19 +19,19 @@ builder.Services
 	.AddPersistence(builder.Configuration);
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();   
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddHttpClient("API_Movimiento", c =>
 {
-	c.BaseAddress = new Uri("http://localhost:5188"); 
+	c.BaseAddress = new Uri("http://localhost:5188");
 });
 
 builder.Services.AddHttpClient("API_Producto", client =>
 {
-	client.BaseAddress = new Uri("http://localhost:5188/"); 
-														
+	client.BaseAddress = new Uri("http://localhost:5188/");
+
 });
 
 
@@ -48,7 +48,12 @@ builder.Services.AddCors(options =>
 	);
 });
 
+
+
 var app = builder.Build();
+
+
+app.UseCors("AllowFrontend");
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {

@@ -18,6 +18,7 @@ namespace INCHE.Producto.Application.DataBase.User.Commands.CreateUser
             try
             {
 				var entity = _mapper.Map<UserEntity>(model);
+				entity.Password = BCrypt.Net.BCrypt.HashPassword(model.Password);
 				await _databaseService.User.AddAsync(entity);
 				await _databaseService.SaveAsync();
 				return model;

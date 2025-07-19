@@ -196,3 +196,4 @@ E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsof
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\BCrypt.Net-Next.dll

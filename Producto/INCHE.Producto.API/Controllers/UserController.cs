@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+using INCHE.Producto.Application.DataBase.User.Commands.AuthUser;
 using INCHE.Producto.Application.DataBase.User.Commands.CreateUser;
 using INCHE.Producto.Application.DataBase.User.Commands.DeleteUser;
 using INCHE.Producto.Application.DataBase.User.Commands.UpdateUser;
@@ -12,11 +11,13 @@ using INCHE.Producto.Application.Exceptions;
 using INCHE.Producto.Application.External.GetTokenJwt;
 using INCHE.Producto.Application.Features;
 using INCHE.Producto.Common.Constants;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace INCHE.Producto.API.Controllers
 {
 
-    [Authorize]
     [Route("api/v1/usuario")]
     [ApiController]
     [TypeFilter(typeof(ExceptionManager))]
@@ -120,29 +121,33 @@ namespace INCHE.Producto.API.Controllers
 		}
 
 
-        [AllowAnonymous]
-        [HttpGet("autenticarse/{userName}/{password}")]
-        public async Task<IActionResult> GetByUserNamePassword(
-            string userName, string password,
-            [FromServices] IGetUserByUserNameAndPasswordQuery getUserByUserNameAndPasswordQuery,
-            [FromServices] IValidator<(string, string)> validator,
-            [FromServices] IGetTokenJwtService getTokenJwtService)
-        {
-           
+     
 
-            var validate = await validator.ValidateAsync((userName, password));
+		[AllowAnonymous]
+		[HttpPost("autenticarse")]
+		public async Task<IActionResult> Autenticarse(
+	    [FromBody] AuthUserModel login,
+	    [FromServices] IAuthUserCommand authUserCommand,
+	    [FromServices] IValidator<AuthUserModel> validator,
+	    [FromServices] IGetTokenJwtService getTokenJwtService)
+		{
 
-            if (!validate.IsValid)
-                return StatusCode(StatusCodes.Status400BadRequest, ResponseApiService.Response(StatusCodes.Status400BadRequest, validate.Errors));
 
-            var data = await getUserByUserNameAndPasswordQuery.Execute(userName, password);
+			var validate = await validator.ValidateAsync(login);
+			if (!validate.IsValid)
+				return StatusCode(StatusCodes.Status400BadRequest, ResponseApiService.Response(StatusCodes.Status400BadRequest, validate.Errors));
 
-            if (data == null)
-                return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound));
+			var data = await authUserCommand.Execute(login);
 
-            data.Token = getTokenJwtService.Execute(data.UserId.ToString(),userName);
 
-            return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data));
-        }
-    }
+			if (data == null)
+				return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound));
+
+			var token = getTokenJwtService.Execute(login);
+			Response.Headers.Append("Authorization", $"Bearer {token}");
+			data.Token = token;
+
+			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data));
+		}
+	}
 }

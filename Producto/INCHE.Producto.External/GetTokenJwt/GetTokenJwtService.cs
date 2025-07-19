@@ -4,6 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using INCHE.Producto.Application.External.GetTokenJwt;
+using INCHE.Producto.Application.DataBase.User.Commands.AuthUser;
 
 namespace INCHE.Producto.External.GetTokenJwt
 {
@@ -15,7 +16,7 @@ namespace INCHE.Producto.External.GetTokenJwt
             _configuration = configuration;
         }
 
-		public string Execute(string userId, string userName = null)
+		public string Execute(AuthUserModel model)
 		{
 			var tokenHandler = new JwtSecurityTokenHandler();
 			string key = _configuration["SecretKeyJwt"] ?? "sZOCoUYcJJYwk1EJIcKR5zCWmi5iSvcs";
@@ -23,11 +24,11 @@ namespace INCHE.Producto.External.GetTokenJwt
 
 			var claims = new List<Claim>
 			{
-				new Claim(ClaimTypes.NameIdentifier, userId)
+				new Claim(ClaimTypes.NameIdentifier, model.UserName)
 			};
 
-			if (!string.IsNullOrEmpty(userName))
-				claims.Add(new Claim(ClaimTypes.Name, userName));
+			if (!string.IsNullOrEmpty(model.UserName))
+				claims.Add(new Claim(ClaimTypes.Name, model.UserName));
 
 			var tokenDescriptor = new SecurityTokenDescriptor
 			{

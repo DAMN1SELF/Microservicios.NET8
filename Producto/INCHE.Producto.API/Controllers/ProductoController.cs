@@ -4,6 +4,7 @@ using INCHE.Producto.Application.DataBase.Product.Commands.DeleteProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.PatchProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProducts;
+using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProductsStock;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductByName;
 using INCHE.Producto.Application.Exceptions;
@@ -76,7 +77,18 @@ namespace INCHE.Producto.API.Controllers
 
 		}
 
-		
+
+		[HttpGet("listarStock")]
+		public async Task<IActionResult> GetAllwithStock([FromServices] IGetAllProductStockQuery getAllProductStockQuery)
+		{
+			var data = await getAllProductStockQuery.Execute();
+
+			if (data.Count == 0)
+				return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound));
+
+			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, Messages.RecordsRetrieved));
+
+		}
 
 
 		[HttpGet("buscar/{id}")]
