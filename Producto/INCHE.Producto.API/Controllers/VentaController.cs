@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct;
 using INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale;
 using INCHE.Producto.Application.DataBase.Sale.Queries.GetAllSales;
 using INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById;

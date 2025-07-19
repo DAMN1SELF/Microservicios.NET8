@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.DeleteProduct;
+using INCHE.Producto.Application.DataBase.Product.Commands.PatchProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProducts;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
@@ -11,12 +12,12 @@ using INCHE.Producto.Common.Constants;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using System.Net.Http;
 
 
 namespace INCHE.Producto.API.Controllers
 {
 
-	[Authorize]
 	[Route("api/v1/[controller]")]
 	[TypeFilter(typeof(ExceptionManager))]
 	[ApiController]
@@ -75,6 +76,8 @@ namespace INCHE.Producto.API.Controllers
 
 		}
 
+		
+
 
 		[HttpGet("buscar/{id}")]
 		public async Task<IActionResult> GetById(int id, [FromServices] IGetProductByIdQuery getProductByIdQuery)
@@ -111,6 +114,36 @@ namespace INCHE.Producto.API.Controllers
 				return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound,message:Messages.RecordAlreadyDeleted));
 
 			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, message: Messages.RecordDeleted));
+		}
+
+
+		[HttpPatch("actualizar-precios-masivo")]
+		public async Task<IActionResult> PatchPreciosMasivo(
+		[FromBody] List<PatchProductModel> productos,
+		[FromServices] IPatchProductCommand patchPreciosProductosCommand
+	//	[FromServices] IValidator<PatchProductModel> validator
+			)
+		{
+			//foreach (var model in productos)
+			//{
+			//	var validar = await validator.ValidateAsync(model);
+			//	if (!validar.IsValid)
+			//		return StatusCode(StatusCodes.Status400BadRequest,
+			//			ResponseApiService.Response(StatusCodes.Status400BadRequest, validar.Errors));
+			//}
+
+			try
+			{
+				var result = await patchPreciosProductosCommand.Execute(productos);
+
+				return StatusCode(StatusCodes.Status200OK,
+					ResponseApiService.Response(StatusCodes.Status200OK, result, message:Messages.RecordUpdated));
+			}
+			catch (Exception ex)
+			{
+				return StatusCode(StatusCodes.Status400BadRequest,
+					ResponseApiService.Response(StatusCodes.Status400BadRequest, productos, ex.Message));
+			}
 		}
 	}
 }

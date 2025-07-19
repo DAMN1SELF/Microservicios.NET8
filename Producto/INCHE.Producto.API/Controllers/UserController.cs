@@ -27,7 +27,7 @@ namespace INCHE.Producto.API.Controllers
 
         }
 
-        [HttpPost("insertar")]
+		[HttpPost("insertar")]
         public async Task<IActionResult> Create(
             [FromBody] CreateUserModel model,
             [FromServices] ICreateUserCommand createUserCommand,
@@ -58,7 +58,8 @@ namespace INCHE.Producto.API.Controllers
             return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data));
         }
 
-        [HttpPut("actualizar-clave")]
+		[AllowAnonymous]
+		[HttpPut("actualizar-clave")]
         public async Task<IActionResult> UpdatePassword(
             [FromBody] UpdateUserPasswordModel model,
             [FromServices] IUpdateUserPasswordCommand updateUserPasswordCommand,
@@ -70,7 +71,7 @@ namespace INCHE.Producto.API.Controllers
                 return StatusCode(StatusCodes.Status400BadRequest, ResponseApiService.Response(StatusCodes.Status400BadRequest, validate.Errors));
 
             var data = await updateUserPasswordCommand.Execute(model);
-            return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data));
+            return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data,message:Messages.RecordsRetrieved));
         }
 
         [HttpDelete("eliminar/{userId}")]
@@ -84,11 +85,11 @@ namespace INCHE.Producto.API.Controllers
             var data = await deleteUserCommand.Execute(userId);
 
             if (!data)
-                return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound, data));
+                return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound, data, message: Messages.RecordNotFound));
 
-            return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data));
+			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, message: Messages.RecordDeleted));
 
-        }
+		}
 
         [HttpGet("listar")]
         public async Task<IActionResult> GetAll([FromServices] IGetAllUserQuery getAllUserQuery)
@@ -96,10 +97,10 @@ namespace INCHE.Producto.API.Controllers
 
             var data = await getAllUserQuery.Execute();
             if (data == null || data.Count == 0)
-                return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound, data));
+                return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound, data, message: Messages.RecordNotFound));
 
-            return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data));
-        }
+			return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, message: Messages.RecordsRetrieved));
+		}
 
         [HttpGet("obtener/{userId}")]
         public async Task<IActionResult> GetById(
@@ -114,9 +115,9 @@ namespace INCHE.Producto.API.Controllers
             if (data == null)
                 return StatusCode(StatusCodes.Status404NotFound, ResponseApiService.Response(StatusCodes.Status404NotFound));
 
-            return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data));
+            return StatusCode(StatusCodes.Status200OK, ResponseApiService.Response(StatusCodes.Status200OK, data, message: Messages.RecordRetrieved));
 
-        }
+		}
 
 
         [AllowAnonymous]
