@@ -175,7 +175,7 @@
         "tags": [
           "Movimiento"
         ],
-        "summary": "Recuperar una movimiento por su ID",
+        "summary": "Recuperar una movimiento por su ID Producto",
         "parameters": [
           {
             "name": "IdProducto",

@@ -58,7 +58,7 @@
         </member>
         <member name="M:INCHE.Producto.API.Controllers.MovimientoController.ListMovementbyId(System.Int32,INCHE.Producto.Application.DataBase.Inventory.Queries.GetMovementById.IGetMovementByIdQuery)">
             <summary>
-             Recuperar una movimiento por su ID
+             Recuperar una movimiento por su ID Producto
             </summary>
             <returns></returns>
         </member>
