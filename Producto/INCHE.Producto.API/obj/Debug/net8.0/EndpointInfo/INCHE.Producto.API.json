@@ -1,11 +1,223 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "API Producto",
+    "title": "API ",
     "description": "API REST,DDD,CleanCode,CQRS,DTOs,Mappers,ID,Builder",
     "version": "v1"
   },
   "paths": {
+    "/api/v1/Compra/registrar-compra": {
+      "post": {
+        "tags": [
+          "Compra"
+        ],
+        "summary": "Registrar una nueva compra",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePurchaseModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePurchaseModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreatePurchaseModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Compra/listar-compras": {
+      "get": {
+        "tags": [
+          "Compra"
+        ],
+        "summary": "Listar todas las compras registradas",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Compra/listar-compras-detalladas": {
+      "get": {
+        "tags": [
+          "Compra"
+        ],
+        "summary": "Listar todas las compras registradas",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Compra/buscar-compra/{Id}": {
+      "get": {
+        "tags": [
+          "Compra"
+        ],
+        "summary": "Recuperar una compra por su ID",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Compra/buscar-compra-detallada/{Id}": {
+      "get": {
+        "tags": [
+          "Compra"
+        ],
+        "summary": "buscar una compra por su ID con detalles",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Movimiento/registrar-movimiento": {
+      "post": {
+        "tags": [
+          "Movimiento"
+        ],
+        "summary": "Registrar una nueva movimiento",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMovementModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMovementModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateMovementModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Movimiento/listar-movimientos": {
+      "get": {
+        "tags": [
+          "Movimiento"
+        ],
+        "summary": "Listar todas las movimientos registradas",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Movimiento/listar-movimientos-detalladas": {
+      "get": {
+        "tags": [
+          "Movimiento"
+        ],
+        "summary": "Listar todas las movimientos registradas",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Movimiento/buscar-movimiento/{Id}": {
+      "get": {
+        "tags": [
+          "Movimiento"
+        ],
+        "summary": "Recuperar una movimiento por su ID",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Movimiento/buscar-movimiento-detallada/{Id}": {
+      "get": {
+        "tags": [
+          "Movimiento"
+        ],
+        "summary": "buscar una movimiento por su ID con detalles",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/v1/Producto/insertar": {
       "post": {
         "tags": [
@@ -151,6 +363,46 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Producto/actualizar-precios-masivo": {
+      "patch": {
+        "tags": [
+          "Producto"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PatchProductModel"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PatchProductModel"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PatchProductModel"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -338,10 +590,155 @@
           }
         }
       }
+    },
+    "/api/v1/Venta/registrar-venta": {
+      "post": {
+        "tags": [
+          "Venta"
+        ],
+        "summary": "Registrar una nueva venta",
+        "requestBody": {
+          "description": "El formato json",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSaleModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSaleModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSaleModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Venta/listar-ventas": {
+      "get": {
+        "tags": [
+          "Venta"
+        ],
+        "summary": "Listar todas las ventas registradas",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Venta/listar-ventas-detalladas": {
+      "get": {
+        "tags": [
+          "Venta"
+        ],
+        "summary": "Listar todas las ventas registradas",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Venta/buscar-venta/{Id}": {
+      "get": {
+        "tags": [
+          "Venta"
+        ],
+        "summary": "Recuperar una venta por su ID",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/v1/Venta/buscar-venta-detallada/{Id}": {
+      "get": {
+        "tags": [
+          "Venta"
+        ],
+        "summary": "buscar una venta por su ID con detalles",
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "CreateMovementDetModel": {
+        "type": "object",
+        "properties": {
+          "productoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantidad": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateMovementModel": {
+        "required": [
+          "detalles"
+        ],
+        "type": "object",
+        "properties": {
+          "tipoMovimiento": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "documentoOrigenId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "detalles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreateMovementDetModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CreateProductModel": {
         "type": "object",
         "properties": {
@@ -356,6 +753,134 @@
           "cost": {
             "type": "number",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePurchaseDetailModel": {
+        "type": "object",
+        "properties": {
+          "codigo_item": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre_item": {
+            "type": "string",
+            "nullable": true
+          },
+          "cantidad_item": {
+            "type": "number",
+            "format": "double"
+          },
+          "precio_item": {
+            "type": "number",
+            "format": "double"
+          },
+          "subtotal_item": {
+            "type": "number",
+            "format": "double"
+          },
+          "igv_item": {
+            "type": "number",
+            "format": "double"
+          },
+          "total_item": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreatePurchaseModel": {
+        "required": [
+          "detalles"
+        ],
+        "type": "object",
+        "properties": {
+          "fecha_Registro": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sub_Total": {
+            "type": "number",
+            "format": "double"
+          },
+          "igv_Total": {
+            "type": "number",
+            "format": "double"
+          },
+          "total_Total": {
+            "type": "number",
+            "format": "double"
+          },
+          "detalles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreatePurchaseDetailModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateSaleDetalleModel": {
+        "type": "object",
+        "properties": {
+          "codigo_item": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cantidad_item": {
+            "type": "number",
+            "format": "double"
+          },
+          "precio_item": {
+            "type": "number",
+            "format": "double"
+          },
+          "subtotal_item": {
+            "type": "number",
+            "format": "double"
+          },
+          "igv_item": {
+            "type": "number",
+            "format": "double"
+          },
+          "total_item": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateSaleModel": {
+        "required": [
+          "detalles"
+        ],
+        "type": "object",
+        "properties": {
+          "fecha_Registro": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "sub_Total": {
+            "type": "number",
+            "format": "double"
+          },
+          "igv_Total": {
+            "type": "number",
+            "format": "double"
+          },
+          "total_Total": {
+            "type": "number",
+            "format": "double"
+          },
+          "detalles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreateSaleDetalleModel"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -378,6 +903,24 @@
           "password": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PatchProductModel": {
+        "type": "object",
+        "properties": {
+          "idProducto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombreProducto": {
+            "type": "string",
+            "nullable": true
+          },
+          "precioProducto": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false

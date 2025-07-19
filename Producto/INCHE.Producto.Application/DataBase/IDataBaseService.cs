@@ -11,10 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace INCHE.Producto.Application.DataBase
 {
-	public interface ITransactionalDbContext
-	{
-		Task<IDbContextTransaction> BeginTransactionAsync();
-	}
+
 	public interface IDataBaseService
     {
 		#region Users
@@ -39,7 +36,7 @@ namespace INCHE.Producto.Application.DataBase
 		DbSet<MovimientoCabEntity> MovimientoCab { get; set; }
 		DbSet<MovimientoDetEntity> MovimientoDet { get; set; }
 		#endregion
-
+		Task<IDbContextTransaction> BeginTransactionAsync();
 		Task<bool> SaveAsync();
     }
 }

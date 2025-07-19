@@ -22,9 +22,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();   
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddHttpClient("API_Movimiento", c =>
+{
+	c.BaseAddress = new Uri("http://localhost:5188"); 
+});
+
+builder.Services.AddHttpClient("API_Producto", client =>
+{
+	client.BaseAddress = new Uri("http://localhost:5188/"); 
+														
+});
+
+
 var app = builder.Build();
-
-
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {

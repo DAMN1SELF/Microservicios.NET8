@@ -4,6 +4,7 @@ namespace INCHE.Producto.Common.Constants
     public class ApplicationConstants
     {
 		public static readonly decimal MARGEN_PRECIO_VENTA = 1.13M;
+		public static readonly decimal IGV = 1.18M;
 	}
 
 	public static class Messages

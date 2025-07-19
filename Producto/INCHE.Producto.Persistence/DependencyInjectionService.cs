@@ -17,11 +17,7 @@ namespace INCHE.Producto.Persistence
             services.AddDbContext<DataBaseService>(options =>
             options.UseSqlServer(configuration["SQLConnectionString"]));
 
-            services.AddScoped<IDataBaseService, DataBaseService>();
-
-			services.AddScoped<ITransactionalDbContext>(provider =>
-	        provider.GetRequiredService<DataBaseService>());
-			//services.AddScoped<ITransactionalDbContext, DataBaseService>();
+			services.AddScoped<IDataBaseService, DataBaseService>();
 
 			return services;
         }

@@ -14,27 +14,6 @@ namespace INCHE.Producto.External.GetTokenJwt
         {
             _configuration = configuration;
         }
-        public string Execute(string id)
-        {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            string key = _configuration["SecretKeyJwt"]?? string.Empty;
-            var signinKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
-
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.NameIdentifier, id)
-                }),
-                Expires = DateTime.UtcNow.AddMinutes(1),
-                SigningCredentials = new SigningCredentials(signinKey, SecurityAlgorithms.HmacSha256Signature),
-                Issuer = _configuration["IssuerJwt"],
-                Audience = _configuration["AudienceJwt"]
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
-            return tokenString;
-        }
 
 		public string Execute(string userId, string userName = null)
 		{

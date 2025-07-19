@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct
 {
     public class UpdateProductModel
-    {
+	{
 		public string FullName { get; set; }
 		public string BatchNumber { get; set; }
 		public decimal Cost { get; set; }

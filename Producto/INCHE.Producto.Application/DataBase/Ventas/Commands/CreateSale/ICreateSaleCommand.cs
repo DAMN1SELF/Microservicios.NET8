@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale
 {
     public interface ICreateSaleCommand
-    {
+	{
         Task<CreateSaleModel> Execute(CreateSaleModel model);
     }
 }

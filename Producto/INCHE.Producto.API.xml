@@ -4,5 +4,103 @@
         <name>INCHE.Producto.API</name>
     </assembly>
     <members>
+        <member name="M:INCHE.Producto.API.Controllers.CompraController.RegisterPurchase(INCHE.Producto.Application.DataBase.Purchase.Commands.CreatePurchase.CreatePurchaseModel,INCHE.Producto.Application.DataBase.Purchase.Commands.CreatePurchase.ICreatePurchaseCommand)">
+            <summary>
+            Registrar una nueva compra
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.CompraController.ListPurchases(INCHE.Producto.Application.DataBase.Purchase.Queries.GetAllPurchases.IGetAllPurchasesQuery)">
+            <summary>
+            Listar todas las compras registradas
+            </summary>
+            <param name="getAllPurchasesQuery">CQRS que se encarga de listar las compras</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.CompraController.ListPurchases2(INCHE.Producto.Application.DataBase.Purchase.Queries.GetAllPurchases.IGetAllPurchasesQuery)">
+            <summary>
+            Listar todas las compras registradas
+            </summary>
+            <param name="getAllPurchasesQuery">CQRS que se encarga de listar las compras</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.CompraController.ListPurchasebyId(System.Int32,INCHE.Producto.Application.DataBase.Purchase.Queries.GetPurchaseById.IGetPurchaseByIdQuery)">
+            <summary>
+             Recuperar una compra por su ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.CompraController.ListPurchasebyId2(System.Int32,INCHE.Producto.Application.DataBase.Purchase.Queries.GetPurchaseById.IGetPurchaseByIdQuery)">
+            <summary>
+            buscar una compra por su ID con detalles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.MovimientoController.RegisterMovement(INCHE.Producto.Application.DataBase.Inventory.Commands.CreateMovement.CreateMovementModel,INCHE.Producto.Application.DataBase.Inventory.Commands.CreateMovement.ICreateMovementCommand)">
+            <summary>
+            Registrar una nueva movimiento
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.MovimientoController.ListMovements(INCHE.Producto.Application.DataBase.Inventory.Queries.GetAllMovements.IGetAllMovementsQuery)">
+            <summary>
+            Listar todas las movimientos registradas
+            </summary>
+            <param name="getAllMovementsQuery">CQRS que se encarga de listar las movimientos</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.MovimientoController.ListMovements2(INCHE.Producto.Application.DataBase.Inventory.Queries.GetAllMovements.IGetAllMovementsQuery)">
+            <summary>
+            Listar todas las movimientos registradas
+            </summary>
+            <param name="getAllMovementsQuery">CQRS que se encarga de listar las movimientos</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.MovimientoController.ListMovementbyId(System.Int32,INCHE.Producto.Application.DataBase.Inventory.Queries.GetMovementById.IGetMovementByIdQuery)">
+            <summary>
+             Recuperar una movimiento por su ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.MovimientoController.ListMovementbyId2(System.Int32,INCHE.Producto.Application.DataBase.Inventory.Queries.GetMovementById.IGetMovementByIdQuery)">
+            <summary>
+            buscar una movimiento por su ID con detalles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.VentaController.RegisterSale(INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale.CreateSaleModel,INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale.ICreateSaleCommand)">
+            <summary>
+            Registrar una nueva venta
+            </summary>
+            <param name="model">El formato json </param>
+            <param name="createVentaCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.VentaController.ListSales(INCHE.Producto.Application.DataBase.Sale.Queries.GetAllSales.IGetAllSalesQuery)">
+            <summary>
+            Listar todas las ventas registradas
+            </summary>
+            <param name="getAllSalesQuery">CQRS que se encarga de listar las ventas</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.VentaController.ListSales2(INCHE.Producto.Application.DataBase.Sale.Queries.GetAllSales.IGetAllSalesQuery)">
+            <summary>
+            Listar todas las ventas registradas
+            </summary>
+            <param name="getAllSalesQuery">CQRS que se encarga de listar las ventas</param>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.VentaController.ListSalebyId(System.Int32,INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById.IGetSaleByIdQuery)">
+            <summary>
+             Recuperar una venta por su ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:INCHE.Producto.API.Controllers.VentaController.ListSalebyId2(System.Int32,INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById.IGetSaleByIdQuery)">
+            <summary>
+            buscar una venta por su ID con detalles
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

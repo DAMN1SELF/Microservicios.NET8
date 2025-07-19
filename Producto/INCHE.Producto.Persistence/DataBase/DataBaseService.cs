@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace INCHE.Producto.Persistence.DataBase
 {
-    public class DataBaseService: DbContext ,IDataBaseService, ITransactionalDbContext
+    public class DataBaseService: DbContext ,IDataBaseService
 	{
         public DataBaseService(DbContextOptions options): base(options)
         {

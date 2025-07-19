@@ -162,7 +162,6 @@ E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\INCHE.Pr
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\INCHE.Producto.API.AssemblyInfoInputs.cache
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\INCHE.Producto.API.AssemblyInfo.cs
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\INCHE.Producto.API.csproj.CoreCompileInputs.cache
-E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\INCHE.Producto.API.MvcApplicationPartsAssemblyInfo.cs
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\INCHE.Producto.API.MvcApplicationPartsAssemblyInfo.cache
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\INCHE.Producto.API.sourcelink.json
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
@@ -191,3 +190,9 @@ E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsof
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider.dll
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider.dll
 E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\INCHE.Producto.API.xml
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\obj\Debug\net8.0\INCHE.Producto.API.MvcApplicationPartsAssemblyInfo.cs
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+E:\NET\Microservicios.NET8\Producto\INCHE.Producto.API\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll

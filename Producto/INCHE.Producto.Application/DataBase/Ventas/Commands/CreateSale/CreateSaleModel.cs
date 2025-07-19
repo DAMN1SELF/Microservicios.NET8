@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 namespace INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale
 {
     public class CreateSaleModel
-    {
+	{
 		public DateTime fecha_Registro { get; set; }
 		public decimal sub_Total { get; set; }
 		public decimal Igv_Total { get; set; }
 		public decimal total_Total { get; set; }
-		public required List<CreateVentaDetalleModel> Detalles { get; set; }
+		public required List<CreateSaleDetalleModel> Detalles { get; set; }
 
 	}
-	public class CreateVentaDetalleModel
+	public class CreateSaleDetalleModel
 	{
 		public int codigo_item { get; set; }
 		public decimal cantidad_item { get; set; }

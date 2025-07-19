@@ -1,6 +1,158 @@
 [
   {
-    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "ContainingType": "INCHE.Producto.API.Controllers.CompraController",
+    "Method": "ListPurchasebyId2",
+    "RelativePath": "api/v1/Compra/buscar-compra-detallada/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.CompraController",
+    "Method": "ListPurchasebyId",
+    "RelativePath": "api/v1/Compra/buscar-compra/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.CompraController",
+    "Method": "ListPurchases",
+    "RelativePath": "api/v1/Compra/listar-compras",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.CompraController",
+    "Method": "ListPurchases2",
+    "RelativePath": "api/v1/Compra/listar-compras-detalladas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.CompraController",
+    "Method": "RegisterPurchase",
+    "RelativePath": "api/v1/Compra/registrar-compra",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "INCHE.Producto.Application.DataBase.Purchase.Commands.CreatePurchase.CreatePurchaseModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.MovimientoController",
+    "Method": "ListMovementbyId2",
+    "RelativePath": "api/v1/Movimiento/buscar-movimiento-detallada/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.MovimientoController",
+    "Method": "ListMovementbyId",
+    "RelativePath": "api/v1/Movimiento/buscar-movimiento/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.MovimientoController",
+    "Method": "ListMovements",
+    "RelativePath": "api/v1/Movimiento/listar-movimientos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.MovimientoController",
+    "Method": "ListMovements2",
+    "RelativePath": "api/v1/Movimiento/listar-movimientos-detalladas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.MovimientoController",
+    "Method": "RegisterMovement",
+    "RelativePath": "api/v1/Movimiento/registrar-movimiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "INCHE.Producto.Application.DataBase.Inventory.Commands.CreateMovement.CreateMovementModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
+    "Method": "PatchPreciosMasivo",
+    "RelativePath": "api/v1/Producto/actualizar-precios-masivo",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productos",
+        "Type": "System.Collections.Generic.List\u00601[[INCHE.Producto.Application.DataBase.Product.Commands.PatchProduct.PatchProductModel, INCHE.Producto.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
     "Method": "GetByName",
     "RelativePath": "api/v1/Producto/buscar",
     "HttpMethod": "GET",
@@ -16,7 +168,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
     "Method": "GetById",
     "RelativePath": "api/v1/Producto/buscar/{id}",
     "HttpMethod": "GET",
@@ -32,7 +184,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
     "Method": "Delete",
     "RelativePath": "api/v1/Producto/eliminar/{Id}",
     "HttpMethod": "DELETE",
@@ -48,7 +200,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
     "Method": "Create",
     "RelativePath": "api/v1/Producto/insertar",
     "HttpMethod": "POST",
@@ -64,7 +216,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
     "Method": "GetAll",
     "RelativePath": "api/v1/Producto/listar",
     "HttpMethod": "GET",
@@ -74,7 +226,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.API.ProductoController",
+    "ContainingType": "INCHE.Producto.API.Controllers.ProductoController",
     "Method": "Update",
     "RelativePath": "api/v1/Producto/modificar/{Id}",
     "HttpMethod": "PUT",
@@ -95,7 +247,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "ContainingType": "INCHE.Producto.API.Controllers.UserController",
     "Method": "Update",
     "RelativePath": "api/v1/usuario/actualizar",
     "HttpMethod": "PUT",
@@ -111,7 +263,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "ContainingType": "INCHE.Producto.API.Controllers.UserController",
     "Method": "UpdatePassword",
     "RelativePath": "api/v1/usuario/actualizar-clave",
     "HttpMethod": "PUT",
@@ -127,7 +279,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "ContainingType": "INCHE.Producto.API.Controllers.UserController",
     "Method": "GetByUserNamePassword",
     "RelativePath": "api/v1/usuario/autenticarse/{userName}/{password}",
     "HttpMethod": "GET",
@@ -148,7 +300,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "ContainingType": "INCHE.Producto.API.Controllers.UserController",
     "Method": "Delete",
     "RelativePath": "api/v1/usuario/eliminar/{userId}",
     "HttpMethod": "DELETE",
@@ -164,7 +316,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "ContainingType": "INCHE.Producto.API.Controllers.UserController",
     "Method": "Create",
     "RelativePath": "api/v1/usuario/insertar",
     "HttpMethod": "POST",
@@ -180,7 +332,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "ContainingType": "INCHE.Producto.API.Controllers.UserController",
     "Method": "GetAll",
     "RelativePath": "api/v1/usuario/listar",
     "HttpMethod": "GET",
@@ -190,7 +342,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "INCHE.Producto.Api.Controllers.UserController",
+    "ContainingType": "INCHE.Producto.API.Controllers.UserController",
     "Method": "GetById",
     "RelativePath": "api/v1/usuario/obtener/{userId}",
     "HttpMethod": "GET",
@@ -200,6 +352,74 @@
       {
         "Name": "userId",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.VentaController",
+    "Method": "ListSalebyId2",
+    "RelativePath": "api/v1/Venta/buscar-venta-detallada/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.VentaController",
+    "Method": "ListSalebyId",
+    "RelativePath": "api/v1/Venta/buscar-venta/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.VentaController",
+    "Method": "ListSales",
+    "RelativePath": "api/v1/Venta/listar-ventas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.VentaController",
+    "Method": "ListSales2",
+    "RelativePath": "api/v1/Venta/listar-ventas-detalladas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "INCHE.Producto.API.Controllers.VentaController",
+    "Method": "RegisterSale",
+    "RelativePath": "api/v1/Venta/registrar-venta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale.CreateSaleModel",
         "IsRequired": true
       }
     ],

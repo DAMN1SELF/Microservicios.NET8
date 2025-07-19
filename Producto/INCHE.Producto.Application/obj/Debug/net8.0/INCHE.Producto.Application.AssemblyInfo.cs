@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("INCHE.Producto.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d67cf8e46bdbb852f927c064b6a00023cf3d3fcf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f6540cb5acd08ad4bbb5315b51901c607fe790e")]
 [assembly: System.Reflection.AssemblyProductAttribute("INCHE.Producto.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("INCHE.Producto.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

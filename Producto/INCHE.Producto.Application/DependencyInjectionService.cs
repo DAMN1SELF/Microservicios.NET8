@@ -3,12 +3,19 @@ using AutoMapper;
 using FluentValidation;
 using INCHE.Producto.Application.Configuration;
 using INCHE.Producto.Application.DataBase;
+using INCHE.Producto.Application.DataBase.Inventory.Commands.CreateMovement;
+using INCHE.Producto.Application.DataBase.Inventory.Queries.GetAllMovements;
+using INCHE.Producto.Application.DataBase.Inventory.Queries.GetMovementById;
 using INCHE.Producto.Application.DataBase.Product.Commands.CreateProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.DeleteProduct;
+using INCHE.Producto.Application.DataBase.Product.Commands.PatchProduct;
 using INCHE.Producto.Application.DataBase.Product.Commands.UpdateProduct;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetAllProducts;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductById;
 using INCHE.Producto.Application.DataBase.Product.Queries.GetProductByName;
+using INCHE.Producto.Application.DataBase.Purchase.Commands.CreatePurchase;
+using INCHE.Producto.Application.DataBase.Purchase.Queries.GetAllPurchases;
+using INCHE.Producto.Application.DataBase.Purchase.Queries.GetPurchaseById;
 using INCHE.Producto.Application.DataBase.Sale.Commands.CreateSale;
 using INCHE.Producto.Application.DataBase.Sale.Queries.GetAllSales;
 using INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById;
@@ -53,9 +60,12 @@ namespace INCHE.Producto.Application
 			#endregion
 
 			#region Producto
+
 			services.AddTransient<ICreateProductCommand, CreateProductCommand>();
             services.AddTransient<IUpdateProductCommand, UpdateProductCommand>();
-            services.AddTransient<IDeleteProductCommand, DeleteProductCommand>();
+			services.AddTransient<IPatchProductCommand, PatchProductCommand>();
+			services.AddTransient<IDeleteProductCommand, DeleteProductCommand>();
+
             services.AddTransient<IGetAllProductQuery, GetAllProductQuery>();
             services.AddTransient<IGetProductByIdQuery, GetProductByIdQuery>();
             services.AddTransient<IGetProductByNameQuery, GetProductByNameQuery>();
@@ -65,10 +75,24 @@ namespace INCHE.Producto.Application
 
 			#endregion
 
+			#region Compras
+			services.AddScoped<ICreatePurchaseCommand, CreatePurchaseCommand>();
+			services.AddScoped<IGetPurchaseByIdQuery, GetPurchaseByIdQuery>();
+			services.AddScoped<IGetAllPurchasesQuery, GetAllPurchasesQuery>();
+			#endregion
 
+
+			#region Ventas
 			services.AddScoped<ICreateSaleCommand, CreateSaleCommand>();
 			services.AddScoped<IGetSaleByIdQuery, GetSaleByIdQuery>();
 			services.AddScoped<IGetAllSalesQuery, GetAllSalesQuery>();
+			#endregion
+
+			#region Movimientos
+			services.AddScoped<ICreateMovementCommand, CreateMovementCommand>();
+			services.AddScoped<IGetMovementByIdQuery, GetMovementByIdQuery>();
+			services.AddScoped<IGetAllMovementsQuery, GetAllMovementsQuery>();
+			#endregion
 
 
 			return services;

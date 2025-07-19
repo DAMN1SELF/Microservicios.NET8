@@ -5,8 +5,8 @@ using Microsoft.Extensions.Logging;
 
 namespace INCHE.Producto.Application.DataBase.Sale.Queries.GetSaleById
 {
-    public class GetSaleByIdQuery: IGetSaleByIdQuery
-    {
+    public class GetSaleByIdQuery : IGetSaleByIdQuery
+	{
         private readonly IDataBaseService _dataBaseService;
         private readonly IMapper _mapper;
         public GetSaleByIdQuery(IDataBaseService dataBaseService,
