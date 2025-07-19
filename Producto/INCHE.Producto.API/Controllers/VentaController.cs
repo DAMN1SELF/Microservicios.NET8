@@ -13,6 +13,7 @@ namespace INCHE.Producto.API.Controllers
 {
 
 
+	[Authorize]
 	[Route("api/v1/[controller]")]
 	[TypeFilter(typeof(ExceptionManager))]
 	[ApiController]

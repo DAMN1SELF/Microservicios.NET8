@@ -18,7 +18,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace INCHE.Producto.API.Controllers
 {
 
-    [Route("api/v1/usuario")]
+	[Authorize]
+	[Route("api/v1/usuario")]
     [ApiController]
     [TypeFilter(typeof(ExceptionManager))]
     public class UserController : ControllerBase
