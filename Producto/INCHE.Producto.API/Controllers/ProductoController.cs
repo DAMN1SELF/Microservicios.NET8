@@ -130,6 +130,7 @@ namespace INCHE.Producto.API.Controllers
 		}
 
 
+		[AllowAnonymous]
 		[HttpPatch("actualizar-precios-masivo")]
 		public async Task<IActionResult> PatchPreciosMasivo(
 		[FromBody] List<PatchProductModel> productos,

@@ -26,6 +26,7 @@ namespace INCHE.Producto.API.Controllers
 
 		}
 
+		[AllowAnonymous]
 		/// <summary>
 		/// Registrar una nueva movimiento
 		/// </summary>

@@ -36,12 +36,6 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:INCHE.Producto.API.Controllers.MovimientoController.RegisterMovement(INCHE.Producto.Application.DataBase.Inventory.Commands.CreateMovement.CreateMovementModel,INCHE.Producto.Application.DataBase.Inventory.Commands.CreateMovement.ICreateMovementCommand)">
-            <summary>
-            Registrar una nueva movimiento
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:INCHE.Producto.API.Controllers.MovimientoController.ListMovements(INCHE.Producto.Application.DataBase.Inventory.Queries.GetAllMovements.IGetAllMovementsQuery)">
             <summary>
             Listar todas las movimientos registradas
